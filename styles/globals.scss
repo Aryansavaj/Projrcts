@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100;300;800");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin hide-bottom-only(
+  $border-radius,
+  $shadow-height,
+  $shadow-color: white,
+  $clipPathPercentage: 50%
+) {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: $border-radius;
+    box-shadow: 0 $shadow-height $shadow-color;
+    clip-path: inset($clipPathPercentage -100vmax -100vmax);
+    z-index: 1;
+  }
+}
+
+@layer components {
+  /*=============================================
+  =            Accordion            =
+  =============================================*/
+
+  .accordion-wrapper .accordion-content {
+    height: 0;
+    overflow: hidden;
+
+    transition: height 0.25s ease-out;
+  }
+
+  .accordion-wrapper .accordion-content.show {
+    height: auto;
+  }
+
+  .bounce-pricing {
+    animation: bounce-accordion 0.5s alternate-reverse;
+  }
+
+  @keyframes bounce-accordion {
+    to {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .plusminus {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+
+    &.active {
+      &:before {
+        transform: translatey(-50%) rotate(-90deg);
+        opacity: 0;
+      }
+      &:after {
+        transform: translatey(-50%) rotate(0);
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      background-color: rgb(61, 61, 61);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transition: 0.35s;
+      width: 14px;
+      height: 2px;
+    }
+
+    &:before {
+      transform: translatey(-50%);
+    }
+
+    &:after {
+      transform: translatey(-50%) rotate(90deg);
+    }
+  }
+
+  /*=====  End of Accordion  ======*/
+
+  .btn {
+    @apply capitalize text-base;
+  }
+
+  .btn-ghost {
+    @apply font-medium hover:bg-primary hover:text-white;
+  }
+
+  .btn-link {
+    @apply text-neutral no-underline hover:no-underline hover:text-primary font-semibold;
+  }
+
+  .btn-primary {
+    @apply rounded-[8px] px-6 py-[12px] text-white font-semibold btn-shadow;
+  }
+
+  .btn-icon {
+    &:hover {
+      @apply bg-primary border-primary;
+
+      svg {
+        @apply bg-white text-primary;
+      }
+    }
+  }
+
+  .btn-icon-reverse {
+    &:hover {
+      @apply bg-white border-white text-primary;
+
+      svg {
+        @apply bg-primary/30 text-primary;
+      }
+    }
+  }
+
+  .container {
+    @apply px-8 lg:px-10;
+  }
+
+  .feature-card {
+    p {
+      @apply text-subtitle;
+    }
+
+    &:hover {
+      @apply bg-primary text-white transition-colors duration-200 ease-in-out;
+
+      .icon-container {
+        @apply bg-glass;
+      }
+
+      p {
+        @apply text-white;
+      }
+    }
+  }
+
+  /*=============================================
+  =            Swiper            =
+  =============================================*/
+
+  .testimony-swiper {
+    .swiper-container,
+    .swiper-wrapper,
+    .swiper-slide {
+      overflow: visible !important;
+    }
+    .swiper-slide-shadow {
+      border-radius: 30px !important;
+    }
+  }
+
+  /*=====  End of Swiper  ======*/
+}
+
+@layer utilities {
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .affiliate-get-started div:nth-child(2n) {
+    @apply lg:relative lg:top-[80px];
+  }
+
+  .btn-shadow {
+    box-shadow: 0px 24px 30px rgba(0, 131, 255, 0.18);
+  }
+
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0px 0px 0px 1.5px #ffffff inset;
+    backdrop-filter: blur(7.5px);
+  }
+
+  .card-shadow {
+    box-shadow: 0px 53.9059px 92.9412px rgba(0, 0, 0, 0.15);
+  }
+
+  .faq-card-shadow {
+    box-shadow: 0px 50px 80px rgba(7, 46, 83, 0.07);
+  }
+
+  .feature-card-shadow {
+    box-shadow: 0px 94.0005px 115.798px rgba(0, 0, 0, 0.03);
+  }
+
+  .footer-links {
+    h4 {
+      @apply font-bold mb-8;
+    }
+
+    li:not(:last-child) {
+      @apply mb-5 lg:mb-7;
+    }
+  }
+
+  .hero-comp-shadow {
+    box-shadow: 0px 53.9059px 92.9412px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-height {
+    @apply sm:h-[calc(100vh-theme(space.header-height))] md:h-fit;
+  }
+
+  .home-form {
+    @apply border border-neutral-200 p-8 rounded-2xl;
+
+    label {
+      span {
+        @apply font-semibold text-base;
+      }
+    }
+  }
+
+  .auth-form {
+    width: 100%;
+    label {
+      span {
+        @apply font-normal text-base;
+      }
+    }
+
+    .formIcon {
+      position: relative;
+      top: 40px;
+      left: 10px;
+    }
+
+    .maskIcon {
+      position: absolute;
+      right: 15px;
+      top: 40px;
+    }
+  }
+
+  .job-openings-shadow {
+    box-shadow: 0px 37px 100px rgba(0, 0, 0, 0.03);
+  }
+
+  .mega-menu-list {
+    &:hover {
+      .list-icon {
+        @apply bg-white;
+      }
+    }
+  }
+
+  .press-about-checkified div:nth-child(2n) {
+    @apply lg:relative lg:top-[40px];
+  }
+
+  .sosmed-card-shadow {
+    box-shadow: 0px 4px 145px rgba(0, 0, 0, 0.09);
+  }
+
+  .svg-primary {
+    filter: invert(28%) sepia(89%) saturate(2154%) hue-rotate(198deg)
+      brightness(107%) contrast(104%);
+  }
+
+  .svg-white {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(288deg)
+      brightness(103%) contrast(101%);
+  }
+
+  .svg-primary-opacity {
+    filter: invert(28%) sepia(89%) saturate(2154%) hue-rotate(198deg)
+      brightness(107%) contrast(104%) opacity(15%);
+  }
+
+  .svg-white-opacity {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(288deg)
+      brightness(103%) contrast(101%) opacity(10%);
+  }
+
+  .triangle {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+
+  .our-culture-container {
+    @include hide-bottom-only(2rem, 4rem, #fcfdff);
+  }
+
+  .university-container {
+    @include hide-bottom-only(2rem, 4rem, #fcfdff);
+  }
+
+  .mastery-ecommerce-container {
+    @include hide-bottom-only(2rem, 4rem, #fcfdff, 100%);
+  }
+
+  .medsos-container {
+    @apply relative;
+
+    &::before,
+    &::after {
+      content: "";
+      @apply absolute h-full w-10 z-10 from-base-100;
+    }
+
+    &::before {
+      @apply left-0 top-0 bg-gradient-to-r;
+    }
+
+    &::after {
+      @apply right-0 top-0 bg-gradient-to-l;
+    }
+  }
+
+  .infinite-slide-left {
+    animation: scroll-left 20s linear infinite;
+  }
+
+  .infinite-slide-right {
+    animation: scroll-right 20s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -100%;
+    }
+  }
+}
