@@ -363,6 +363,8 @@
 .side_hover svg path {
   stroke: #707ba0;
 }
-.side_hover:hover .side_hover svg path {
-  stroke: var(--primary);
+.side_hover {
+  :hover .side_hover svg path {
+    stroke: red;
+  }
 }
