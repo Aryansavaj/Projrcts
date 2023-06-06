@@ -8,7 +8,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- :root {
+:root {
   --blue: #4e73df;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -449,7 +449,7 @@ mark {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
-.mail-box-img{
+.mail-box-img {
   margin-top: -80px;
   margin-bottom: 20px;
 }
@@ -2308,27 +2308,27 @@ fieldset:disabled a.btn {
 .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(151, 153, 166, 0.5);
 }
-.btn-light-blue{
+.btn-light-blue {
   background: rgba(255, 255, 255, 0.49);
-box-shadow: 0px 9px 25px rgba(0, 131, 255, 0.3);
-backdrop-filter: blur(7.5px);
-border-radius: 7px !important;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    padding: 0rem 1.5rem !important;
+  box-shadow: 0px 9px 25px rgba(0, 131, 255, 0.3);
+  backdrop-filter: blur(7.5px);
+  border-radius: 7px !important;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 0rem 1.5rem !important;
 }
-.check-univer-text{
+.check-univer-text {
   font-weight: 700;
-font-size: 18.6374px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
+  font-size: 18.6374px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
 .btn-success {
   color: #fff;
@@ -9247,9 +9247,9 @@ a:focus {
   align-items: center;
   justify-content: center;
 }
-.card-image-bg{
-  background: linear-gradient(83.85deg, #0083FF 100%, #39DBFF 100%);
-border-radius: 45px 45px 45px 35px;
+.card-image-bg {
+  background: linear-gradient(83.85deg, #0083ff 100%, #39dbff 100%);
+  border-radius: 45px 45px 45px 35px;
 }
 .border-left-primary {
   border-left: 0.25rem solid #4e73df !important;
@@ -9330,6 +9330,7 @@ border-radius: 45px 45px 45px 35px;
   content: "\f105";
   font-family: "Font Awesome 5 Free";
 }
+
 .sidebar .nav-item.dropdown.show .dropdown-toggle::after,
 .topbar .nav-item.dropdown.show .dropdown-toggle::after {
   content: "\f107";
@@ -9619,7 +9620,7 @@ border-radius: 45px 45px 45px 35px;
   margin-right: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  background: linear-gradient(49.14deg, #0083FF 100%, #39DBFF 100%);
+  background: linear-gradient(49.14deg, #0083ff 100%, #39dbff 100%);
   border-radius: 25px;
 }
 .sidebar .sidebar-card .sidebar-card-illustration {
@@ -9631,12 +9632,12 @@ border-radius: 45px 45px 45px 35px;
 }
 .sidebar .sidebar-card p {
   font-weight: 700;
-font-size: 18.6374px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
+  font-size: 18.6374px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .sidebar {
@@ -9695,7 +9696,6 @@ color: #FFFFFF;
   }
   .sidebar .sidebar-brand .sidebar-brand-text {
     display: inline;
-    
   }
   .sidebar .sidebar-heading {
     text-align: left;
@@ -9808,13 +9808,13 @@ color: #FFFFFF;
 .sidebar-dark hr.sidebar-divider {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
-.oversikt-text{
-font-weight: 800;
-font-size: 26px;
-line-height: 32px;
-display: flex;
-align-items: center;
-color: #0083FF;
+.oversikt-text {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #0083ff;
 }
 .sidebar-dark .sidebar-heading {
   color: rgba(255, 255, 255, 0.4);
@@ -9823,7 +9823,7 @@ color: #0083FF;
   color: #000;
 }
 .sidebar-dark-blue .nav-item .nav-link {
-  color: #0083FF;
+  color: #0083ff;
 }
 .sidebar-dark .nav-item .nav-link i {
   color: rgba(255, 255, 255, 0.3);
