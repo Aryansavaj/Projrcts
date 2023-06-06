@@ -107,19 +107,40 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
   >
     <i className="bi bi-filter-left px-2 bg-gray-900 rounded-md" />
   </span>
-  <div className="sidebar fixed top-20 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-base-100">
+  <div className="sidebar fixed top-20 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-base-100 pl-8">
     
-    <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
+    <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-subtitle hover:text-primary side_hover">
       <i className="bi bi-house-door-fill" />
-      <span className="text-[15px] ml-4 text-primary font-bold">Hem</span>
+        {/* <div className="p-2">
+              <Image
+                src="/icons/home/home.svg"
+                alt="people"
+                height={20}
+                width={20}
+              />
+        </div> */}
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.02 1.84016L2.63 6.04016C1.73 6.74016 1 8.23016 1 9.36016V16.7702C1 19.0902 2.89 20.9902 5.21 20.9902H16.79C19.11 20.9902 21 19.0902 21 16.7802V9.50016C21 8.29016 20.19 6.74016 19.2 6.05016L13.02 1.72016C11.62 0.740163 9.37 0.790163 8.02 1.84016Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 16.9902V13.9902"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      <span className="text-[15px] ml-4  font-bold">
+        Hem</span>
     </div>
-    <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
+    <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-subtitle hover:text-primary side_hover">
       <i className="bi bi-bookmark-fill" />
-      <span className="text-[15px] ml-4 text-primary font-bold">Kurser</span>
+      <span className="text-[15px] ml-4  font-bold">Kurser</span>
     </div>
-    <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
+    <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-subtitle hover:text-primary side_hover">
       <i className="bi bi-bookmark-fill" />
-      <span className="text-[15px] ml-4 text-primary font-bold">Community</span>
+      <div className="p-2">
+              <Image
+                src="/icons/home/people.png"
+                alt="people"
+                height={20}
+                width={20}
+              />
+        </div>
+      <span className="text-[15px] ml-4  font-bold">Community</span>
     </div>
   
   </div>

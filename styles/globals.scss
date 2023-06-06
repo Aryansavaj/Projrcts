@@ -349,3 +349,20 @@
     }
   }
 }
+.sidebar .side_hover:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 131, 255, 0.19) -21.06%,
+    rgba(255, 255, 255, 0) 119.47%
+  );
+  border-radius: 8px 0px 0px 8px;
+  border-width: 0px 7px 0px 0px;
+  border-color: var(--primary);
+}
+
+.side_hover svg path {
+  stroke: #707ba0;
+}
+.side_hover:hover .side_hover svg path {
+  stroke: var(--primary);
+}
