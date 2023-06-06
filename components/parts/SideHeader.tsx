@@ -140,6 +140,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
           </svg>
           <span className="text-[15px] ml-4  font-bold">Hem</span>
         </div>
+        <Link  href="/coursedetail">
         <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-subtitle hover:text-primary side_hover">
           <i className="bi bi-bookmark-fill" />
           <svg
@@ -181,6 +182,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
 
           <span className="text-[15px] ml-4  font-bold">Kurser</span>
         </div>
+        </Link>
         <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-subtitle hover:text-primary side_hover">
           <i className="bi bi-bookmark-fill" />
           <svg
