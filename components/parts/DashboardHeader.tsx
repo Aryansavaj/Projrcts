@@ -59,7 +59,7 @@ const AuthButton = ({
     </Link>
     <Link className="btn btn-primary btn-shadow" href="/signup">
       {t.headerData.getStarted}
-    </Link> 
+    </Link>
     <Link className="btn btn-primary btn-shadow" href="/dashboard">
       {t.headerData.dashboard}
     </Link>
@@ -122,112 +122,84 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
           } lg:static p-8 pb-10 lg:p-0 text-center w-full lg:w-auto lg:flex flex-col lg:flex-row justify-between items-center shadow-lg lg:shadow-none rounded-b-3xl lg:rounded-none transition-all duration-200 ease-linear max-h-screen`}
         >
           <ul className="flex flex-col lg:flex-row gap-2 lg:gap-8 h-full">
-            
-          <li>
-              <label className="btn btn-link rounded-full bg-base-100 h-16 drop-shadow-md" onClick={toggleMenu}>
-              <div className="flex items-center justify-start gap-2">
-            <Image
-              className="object-contain"
-              src="/notify_bell.png"
-              alt="checkified"
-              height={34}
-              width={34}
-              priority
-            />
-              
-            </div>
-              
-              </label>
-              <div
-                className={`lg:absolute lg:w-[70%] ${
-                  openMenu
-                    ? "lg:top-[100px] lg:opacity-100"
-                    : "lg:top-[90px] lg:opacity-0"
-                } lg:transform lg:-translate-x-1/2 lg:left-1/2 shadow-lg lg:p-8 z-10 flex flex-col lg:flex-row lg:h-auto rounded-lg gap-6 bg-base-100 overflow-auto transition-all duration-200 ease-in-out ${
-                  openMenu
-                    ? "h-[400px] p-8 shadow-none border opacity-100"
-                    : "h-0 p-0 opacity-0"
-                } `}
-              >
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  {t.headerData.megaMenuData.map((data) => (
-                    <Link key={data.id} href={data.link}>
-                      <div className="mega-menu-list flex gap-6 items-start hover:bg-base-200 p-2 rounded-lg">
-                        <div className="list-icon bg-base-200 p-2 rounded-lg">
-                          <Image
-                            src={data.imageUrl}
-                            alt="Mega menu icon"
-                            className="object-contain"
-                            width={30}
-                            height={30}
-                            priority
-                          />
-                        </div>
-                        {/* <div className="bg-primary w-[2px] h-6" /> */}
-                        <div className="menu-content">
-                          <h2 className="font-semibold text-left">
-                            {data.title}
-                          </h2>
-                          <p className="text-sm text-left">{data.desc}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-                <div className="">
-                  <h2 className="font-bold text-xl mb-4">
-                    Checkified University
-                  </h2>
+            <li>
+              <label className="btn btn-link rounded-full bg-base-100 h-14 drop-shadow-md">
+                <div className="flex items-center justify-start gap-2">
                   <Image
-                    src="/images/video-placeholder.png"
-                    alt="Video Placeholder"
-                    width={300}
-                    height={190}
+                    className="object-contain"
+                    src="/notify_bell.png"
+                    alt="checkified"
+                    height={28}
+                    width={28}
                     priority
                   />
                 </div>
-              </div>
+              </label>
             </li>
 
             <li>
-              <label className="btn btn-link rounded-full bg-base-100 h-16 drop-shadow-md" onClick={toggleMenu}>
-              <div className="flex items-center justify-start gap-2">
-            <Image
-              className="svg-primary object-contain"
-              src="/logo.svg"
-              alt="checkified"
-              height={44}
-              width={44}
-              priority
-            />
-              John Smith
-                <MdOutlineKeyboardArrowDown
-                  size={26}
-                  className={`ml-1 transform ${
-                    openMenu ? "rotate-180" : "rotate-0"
-                  }`}
-                />
-            </div>
-              
+              <label
+                className="btn btn-link rounded-full bg-base-100 h-14 drop-shadow-md"
+                onClick={toggleMenu}
+              >
+                <div className="flex items-center justify-start gap-2">
+                  <Image
+                    className="svg-primary object-contain"
+                    src="/logo.svg"
+                    alt="checkified"
+                    height={35}
+                    width={35}
+                    priority
+                  />
+                  John Smith
+                  <MdOutlineKeyboardArrowDown
+                    size={26}
+                    className={`ml-1 transform ${
+                      openMenu ? "rotate-180" : "rotate-0"
+                    }`}
+                  />
+                </div>
               </label>
               <div
-                className={`lg:absolute lg:w-[70%] ${
+                className={`lg:absolute lg:w-[20%] ${
                   openMenu
                     ? "lg:top-[100px] lg:opacity-100"
                     : "lg:top-[90px] lg:opacity-0"
-                } lg:transform lg:-translate-x-1/2 lg:left-1/2 shadow-lg lg:p-8 z-10 flex flex-col lg:flex-row lg:h-auto rounded-lg gap-6 bg-base-100 overflow-auto transition-all duration-200 ease-in-out ${
+                } lg:transform lg:translate-x-[17rem] lg:left-[60rem] shadow-lg lg:p-8 z-10 flex flex-col lg:flex-row lg:h-auto rounded-[28px] gap-6 bg-base-100 overflow-auto transition-all duration-200 ease-in-out ${
                   openMenu
                     ? "h-[400px] p-8 shadow-none border opacity-100"
                     : "h-0 p-0 opacity-0"
                 } `}
               >
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  {t.headerData.megaMenuData.map((data) => (
-                    <Link key={data.id} href={data.link}>
-                      <div className="mega-menu-list flex gap-6 items-start hover:bg-base-200 p-2 rounded-lg">
-                        <div className="list-icon bg-base-200 p-2 rounded-lg">
+                <div className="">
+                  <Image
+                    src="/images/profile-bg.png"
+                    alt="Video Placeholder"
+                    width={300}
+                    height={190}
+                    priority
+                  />
+                  <div className="profile-details relative -mt-8">
+                  <div className="profile-pic rounded-full flex justify-center ">
+                  <Image
+                  className="object-contain border-2 border-white-500/100 rounded-full p-1"
+                    src="/images/profilepic.png"
+                    alt="Video Placeholder"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                  </div>
+      
+                    <h2 className="font-bold text-xl mt-2">John Smith</h2>
+                  </div>
+                  <hr className="my-8" />
+                  <div className="grid grid-cols-1 lg:grid-cols-1">
+                    <Link key="" href="">
+                      <div className="mega-menu-list items-center flex gap-3 items-start hover:bg-base-200 p-2 rounded-lg">
+                        <div className="list-icon bg-base-100 p-2 rounded-lg">
                           <Image
-                            src={data.imageUrl}
+                            src="/icons/header/profile.png"
                             alt="Mega menu icon"
                             className="object-contain"
                             width={30}
@@ -235,37 +207,54 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
                             priority
                           />
                         </div>
-                        {/* <div className="bg-primary w-[2px] h-6" /> */}
+                        
                         <div className="menu-content">
-                          <h2 className="font-semibold text-left">
-                            {data.title}
-                          </h2>
-                          <p className="text-sm text-left">{data.desc}</p>
+                          <h2 className="font-semibold text-left">Konto</h2>
                         </div>
                       </div>
                     </Link>
-                  ))}
-                </div>
-                <div className="">
-                  <h2 className="font-bold text-xl mb-4">
-                    Checkified University
-                  </h2>
-                  <Image
-                    src="/images/video-placeholder.png"
-                    alt="Video Placeholder"
-                    width={300}
-                    height={190}
-                    priority
-                  />
+                    <Link key="" href="">
+                      <div className="mega-menu-list items-center flex gap-3 items-start hover:bg-base-200 p-2 rounded-lg">
+                        <div className="list-icon bg-base-100 p-2 rounded-lg">
+                          <Image
+                            src="/icons/header/info-circle.png"
+                            alt="Mega menu icon"
+                            className="object-contain"
+                            width={30}
+                            height={30}
+                            priority
+                          />
+                        </div>
+                     
+                        <div className="menu-content">
+                          <h2 className="font-semibold text-left">Hjälpcenter</h2>
+                        </div>
+                      </div>
+                    </Link>
+                    <Link key="" href="">
+                      <div className="mega-menu-list items-center flex gap-3 items-start hover:bg-base-200 p-2 rounded-lg">
+                        <div className="list-icon bg-base-100 p-2 rounded-lg">
+                          <Image
+                            src="/icons/header/logout.png"
+                            alt="Mega menu icon"
+                            className="object-contain"
+                            width={30}
+                            height={30}
+                            priority
+                          />
+                        </div>
+                        
+                        <div className="menu-content">
+                          <h2 className="font-semibold text-left">Logga ut</h2>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </li>
-            
           </ul>
-          
         </nav>
-
-        
 
         <button className="lg:hidden rounded-md text-primary bg-base-200">
           <Hamburger
@@ -277,8 +266,5 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
         </button>
       </div>
     </header>
-
-
-    
   );
 }

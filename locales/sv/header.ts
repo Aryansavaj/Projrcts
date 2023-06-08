@@ -49,6 +49,5 @@ export const headerData: HeaderData = {
   ],
   pricing: "Prisplaner",
   login: "Logga In",
-  getStarted: "Starta nu",
-  dashboard: "Dashboard"
+  getStarted: "Starta nu"
 }

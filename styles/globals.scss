@@ -105,6 +105,12 @@
     @apply text-neutral no-underline hover:no-underline hover:text-primary font-semibold;
   }
 
+  .btn-white {
+    background: linear-gradient(88.61deg, #FFFFFF 100%, rgba(255, 255, 255, 0) 100%);
+    border-color: #FFFFFF;
+    color: #0083FF;
+  }
+
   .btn-primary {
     @apply rounded-[8px] px-6 py-[12px] text-white font-semibold btn-shadow;
   }
@@ -187,6 +193,16 @@
     box-shadow: 0px 0px 0px 1.5px #ffffff inset;
     backdrop-filter: blur(7.5px);
   }
+  .bg-glass-border {
+    box-shadow: 0px 0px 0px 1.5px #ffffff inset;
+  }
+  .bg-glass-light {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(7.5px);
+  }
+  .bg-white-gradient{
+    background: linear-gradient(88.61deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
 
   .card-shadow {
     box-shadow: 0px 53.9059px 92.9412px rgba(0, 0, 0, 0.15);
@@ -199,7 +215,9 @@
   .feature-card-shadow {
     box-shadow: 0px 94.0005px 115.798px rgba(0, 0, 0, 0.03);
   }
-
+.text-26{
+  font-size: 26px !important;
+}
   .footer-links {
     h4 {
       @apply font-bold mb-8;
@@ -349,6 +367,7 @@
     }
   }
 }
+
 .sidebar .side_hover:hover {
   background: linear-gradient(
     90deg,

@@ -60,9 +60,7 @@ const AuthButton = ({
     <Link className="btn btn-primary btn-shadow" href="/signup">
       {t.headerData.getStarted}
     </Link> 
-    <Link className="btn btn-primary btn-shadow" href="/dashboard">
-      {t.headerData.dashboard}
-    </Link>
+    
   </div>
 );
 
