@@ -23,24 +23,24 @@ export default function Profilesetting({}: Props) {
   return (
     <Layout headTitle={profiledata.metaData.title}>
       <section className="mb-8 lg:mb-8">
-     
-            <div className="px-4 py-10 bg-base-100 rounded-[3rem] h-14 flex items-center gap-6 text-sm w-[350px]">
-              <div className="flex items-center gap-2 text-1xl font-bold">
-              <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
-                  1
-              </div>
-              Information
-              </div>
-              <div className="flex items-center gap-2 text-1xl">
-              <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
-                  2
-              </div>
-              Betalning
-              </div>
-
+        <div className="px-4 py-10 bg-base-100 rounded-[3rem] h-14 flex items-center gap-6 text-sm w-[350px]">
+        <Link  href="/profile-setting">
+          <div className="flex items-center gap-2 text-1xl font-bold">
+            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
+              1
             </div>
-         
-
+            Information
+          </div>
+          </Link>
+          <Link  href="/profile-setting-payment">
+          <div className="flex items-center gap-2 text-1xl">
+            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
+              2
+            </div>
+            Betalning
+          </div>
+          </Link>
+        </div>
       </section>
 
       <section className="grid grid-cols-3 gap-6">
