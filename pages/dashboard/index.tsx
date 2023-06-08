@@ -11,6 +11,7 @@ import ScrollReveal from "@/components/transition/ScrollReveal";
 import { Progress, Typography } from "@material-tailwind/react";
 import en from "@/locales/en";
 import sv from "@/locales/sv";
+import ProgressBarComponent from '@/components/parts/progress_bar';
 
 type Props = {};
 
@@ -68,15 +69,7 @@ export default function Dashboard({}: Props) {
                 />
               </div>
               <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
+                <ProgressBarComponent progress={80} />
               </div>
               <h1 className="font-bold text-xl mb-2 hover:text-primary hover:underline transition-all duration-200">
                 Checkified - Nyckeln till Framgång
@@ -94,15 +87,7 @@ export default function Dashboard({}: Props) {
                 />
               </div>
               <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
+                <ProgressBarComponent progress={80} />
               </div>
               <h1 className="font-bold text-xl mb-2 hover:text-primary hover:underline transition-all duration-200">
                 Checkified - Nyckeln till Framgång
@@ -120,15 +105,7 @@ export default function Dashboard({}: Props) {
                 />
               </div>
               <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
+                  <ProgressBarComponent progress={80} />
               </div>
               <h1 className="font-bold text-xl mb-2 hover:text-primary hover:underline transition-all duration-200">
                 Checkified - Nyckeln till Framgång
