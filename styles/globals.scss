@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100;300;800");
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500;600;700;800;900");
 
 @tailwind base;
 @tailwind components;
@@ -506,3 +506,13 @@
   }
 }
 
+.left-\[47rem\]{
+  left: 47rem;
+}
+.text-18 {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+.font-900{
+  font-weight: 900 !important;
+}
