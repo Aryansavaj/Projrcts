@@ -432,6 +432,7 @@
   background: rgba(255, 255, 255, 0.54);
   backdrop-filter: blur(5.85015px);
 }
+
 .popup {
   display: none;
   position: fixed;
@@ -474,3 +475,80 @@
     max-width: 900px;
   }
 }
+
+
+/*=============================================
+  =           toggle button           =
+  =============================================*/
+
+.custom-checkbox {
+  width: 250px;
+  height: 80px;
+  input#status {
+    display: none;
+
+    // Unchecked State
+    + label {
+      height: 100%;
+      width: 100%;
+      > .status-switch {
+        cursor: pointer;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        background-color: #fff;
+        color: #707ba0;
+        transition: all 0.5s ease;
+        padding: 0px;
+        border-radius: 12px;
+        border: 1px solid #dee1ea;
+
+        &:before,
+        &:after {
+          border-radius: 12px;
+          height: calc(100% - 0px);
+          width: calc(50% - 3px);
+          display: flex;
+          align-items: center;
+          position: absolute;
+          justify-content: center;
+          transition: all 0.3s ease;
+        }
+
+        &:before {
+          background: #0083ff;
+          color: white;
+          box-shadow: 0px 10px 21px rgba(0, 131, 255, 0.25);
+          left: 0px;
+          z-index: 10;
+          content: url("../public/icons/header/sun.svg") attr(data-unchecked);
+        }
+
+
+        &:after {
+          right: 0;
+          content: url("../public/icons/header/moon.svg") attr(data-checked);
+        }
+      }
+    }
+
+    // Checked stae
+    &:checked + label > .status-switch {
+      background-color: #fff;
+
+      &:after {
+        left: 0;
+        content: url("../public/icons/header/sun-grey.svg") attr(data-unchecked);
+      }
+
+      &:before {
+        color: #fff;
+        left: 50%;
+        content: url("../public/icons/header/moon-white.svg") attr(data-checked);
+      }
+    }
+  }
+}
+
+
+
