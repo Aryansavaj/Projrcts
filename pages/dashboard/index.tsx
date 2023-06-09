@@ -34,6 +34,7 @@ export default function Dashboard({}: Props) {
             className="z-[-1]"
           />
 
+
           <ScrollReveal>
             <h2 className="text-[30px] lg:text-[40px] mb-4 font-bold">
               Välkommen 👋
