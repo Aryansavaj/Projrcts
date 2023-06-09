@@ -13,6 +13,7 @@ import en from "@/locales/en";
 import sv from "@/locales/sv";
 import ProgressBarComponent from '@/components/parts/progress_bar';
 
+
 type Props = {};
 
 export default function Dashboard({}: Props) {
