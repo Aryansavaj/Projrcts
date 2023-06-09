@@ -414,3 +414,20 @@
   height: unset !important;
   min-height: unset !important;
 }
+.form_inner_logo {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1.5px solid #ffffff;
+  backdrop-filter: blur(7.5px);
+}
+.form_benner_logo {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+  backdrop-filter: blur(7.5px) !important;
+}
+.form_benner_icon {
+  background: rgba(255, 255, 255, 0.54);
+  backdrop-filter: blur(5.85015px);
+}
