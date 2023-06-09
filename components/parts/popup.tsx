@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../../styles/globals.scss";
 
 interface PopupProps {
   isOpen: boolean;
@@ -12,9 +11,9 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose, children }) => {
   };
 
   return (
-    <div className={`${styles.popup} ${isOpen ? styles.open : ""}`}>
-      <div className={styles.content}>
-        <button className={styles.closeButton} onClick={handleClose}>
+    <div className={`popup ${isOpen ? "open" : ""}`}>
+      <div className="content">
+        <button className="closeButton" onClick={handleClose}>
           Close
         </button>
         {children}
