@@ -12,7 +12,7 @@ import ProfileForm from "@/components/parts/ProfileForm";
 import Popup from "@/components/parts/popup";
 // import en from "@/locales/en";
 // import sv from "@/locales/sv";
-import { profiledata } from "@/locales/sv/profilesetting";
+import { profile_setting_pop } from "@/locales/sv/profile_setting_pop";
 
 type Props = {};
 
@@ -30,7 +30,7 @@ export default function Profilesetting({}: Props) {
     setIsOpen(false);
   };
   return (
-    <Layout headTitle={profiledata.metaData.title}>
+    <Layout headTitle={profile_setting_pop.metaData.title}>
       <section className="">
         <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem] gap-8 ">
           <section className=" bg-primary rounded-[2rem] py-8 lg:py-16 text-white relative mb-16 isolate">
@@ -143,11 +143,12 @@ export default function Profilesetting({}: Props) {
               />
             </div>
           </section>
-          <ProfileForm profileData={profiledata.profileForm} />
+          <ProfileForm profileData={profile_setting_pop.profileForm} />
           <div className="text-end">
             <button
               className="btn btn-primary w-full lg:w-fit mb-6 mt-6"
-              onClick={handleOpenPopup}
+              data-modal-target="staticModal"
+              data-modal-toggle="staticModal"
               type="button"
             >
               Spara
@@ -155,8 +156,8 @@ export default function Profilesetting({}: Props) {
           </div>
         </div>
       </section>
-      {/* <h1>My Page</h1>
-      <button >Open Popup</button> */}
+      <h1>My Page</h1>
+      <button onClick={handleOpenPopup}>Open Popup</button>
       <Popup isOpen={isOpen} onClose={handleClosePopup}>
         <h2>Popup Content</h2>
         <p>This is the content of the popup.</p>
