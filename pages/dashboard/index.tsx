@@ -63,6 +63,7 @@ export default function Dashboard({}: Props) {
 
             
           </section>
+          
           <section className="p-8 lg:p-12 bg-base-100 rounded-[3rem] items-center lg:flex-row gap-8">
             <ScrollReveal>
             <h1 className="text-[26px] lg:text-[40px] leading-[2rem] lg:leading-[3rem] mb-8 text-left font-900 text-18">
