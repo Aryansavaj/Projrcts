@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +9,7 @@ import Layout from "@/components/DashboardLayout";
 import CacingOne from "@/components/graphic/CacingOne";
 import ScrollReveal from "@/components/transition/ScrollReveal";
 import ProfileForm from "@/components/parts/ProfileForm";
+import Popup from "@/components/parts/popup";
 // import en from "@/locales/en";
 // import sv from "@/locales/sv";
 import { profiledata } from "@/locales/sv/profilesetting";
@@ -19,17 +20,25 @@ export default function Profilesetting({}: Props) {
   // const router = useRouter();
   // const { locale } = router;
   // const t = locale === "en" ? en : sv;
+  const [isOpen, setIsOpen] = useState(false);
 
+  const handleOpenPopup = () => {
+    setIsOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsOpen(false);
+  };
   return (
     <Layout headTitle={profiledata.metaData.title}>
       <section className="">
         <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem] gap-8 ">
-          <section className=" bg-primary rounded-[2rem] py-12 lg:py-16 text-white relative mb-16 isolate">
+          <section className=" bg-primary rounded-[2rem] py-8 lg:py-16 text-white relative mb-16 isolate">
             <div className="w-full lg:w-2/5  p-8 lg:px-16 lg:py-10 rounded-tl-3xl rounded-bl-3xl backdrop-blur-xl lg:mr-auto mt-40 lg:mt-0">
               <ScrollReveal>
                 <div className="form_benner_wrap">
-                  <div className="grid grid-cols-2 place-content-center form_benner_logo first-letter border border-white rounded-2xl">
-                    <div className="bg-white p-2 rounded-full w-fit border border-white form_inner_logo ">
+                  <div className="grid grid-cols-2 gap-5 place-content-center form_benner_logo first-letter border border-white rounded-2xl p-5">
+                    <div className="bg-white p-1 rounded-full w-fit border border-white form_inner_logo ">
                       <div className="bg-white rounded-full w-fit p-2">
                         <Image
                           className="svg-primary"
@@ -40,9 +49,9 @@ export default function Profilesetting({}: Props) {
                         />
                       </div>
                     </div>
-                    <div className="grid grid-cols-2 place-content-center">
+                    <div className="grid grid-cols-1 place-content-center">
                       <div className="form_benner_icon grid grid-cols-2 place-content-center rounded-lg">
-                        <div className="form_inner_icon_1 bg-primary rounded-lg p-4">
+                        <div className="form_inner_icon_1 bg-primary rounded-lg p-2">
                           <svg
                             width="19"
                             height="19"
@@ -73,7 +82,7 @@ export default function Profilesetting({}: Props) {
                             />
                           </svg>
                         </div>
-                        <div className="form_inner_icon_2">
+                        <div className="form_inner_icon_2 p-2">
                           <svg
                             width="19"
                             height="19"
@@ -136,12 +145,23 @@ export default function Profilesetting({}: Props) {
           </section>
           <ProfileForm profileData={profiledata.profileForm} />
           <div className="text-end">
-            <button className="btn btn-primary w-full lg:w-fit mb-6 mt-6">
+            <button
+              className="btn btn-primary w-full lg:w-fit mb-6 mt-6"
+              data-modal-target="staticModal"
+              data-modal-toggle="staticModal"
+              type="button"
+            >
               Spara
             </button>
           </div>
         </div>
       </section>
+      <h1>My Page</h1>
+      <button onClick={handleOpenPopup}>Open Popup</button>
+      <Popup isOpen={isOpen} onClose={handleClosePopup}>
+        <h2>Popup Content</h2>
+        <p>This is the content of the popup.</p>
+      </Popup>
     </Layout>
   );
 }
