@@ -419,7 +419,6 @@
   background: rgba(255, 255, 255, 0.4);
   border: 1.5px solid #ffffff;
   backdrop-filter: blur(7.5px);
-  width: 76%;
 }
 .form_benner_logo {
   background: linear-gradient(
@@ -557,5 +556,10 @@
   margin-bottom: 0 !important;
 }
 .profile_pop_img{
-  position: unset !important;
+  top: 50% !important;
+  left:50% !important;
+  transform: translate( -50%, -50% );
+  width: 100%  !important;
+  height: unset !important;
+  max-width: unset !important;
 }

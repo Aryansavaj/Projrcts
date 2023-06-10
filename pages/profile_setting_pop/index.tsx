@@ -35,20 +35,20 @@ export default function Profile_setting_pop({}: Props) {
     <Layout headTitle={profile_pop.metaData.title}>
       <section className="grid grid-cols-4">
         <div className="pt-8 pl-8 pr-8 pb-0 bg-base-100 rounded-[3rem] gap-8 col-span-3">
-          <section className=" bg-primary rounded-[2rem] text-white relative mb-5 isolate h-44">
+          <section className=" bg-primary rounded-[2rem] text-white relative mb-5 isolate">
             <div className="w-full  p-7 rounded-tl-3xl rounded-bl-3xl lg:mr-auto mt-40 lg:mt-0">
               <ScrollReveal>
                 <div className="grid grid-cols-2 gap-10 place-content-between">
                   <div className="form_benner_wrap">
-                    <div className="h-[121px] grid grid-cols-2 gap- place-content-between form_benner_logo first-letter border border-white rounded-2xl p-4">
+                    <div className=" grid grid-cols-2 gap- place-content-between form_benner_logo first-letter border border-white rounded-2xl p-4">
                       <div className="bg-white p-1 rounded-full w-fit border border-white form_inner_logo ">
-                        <div className="bg-white rounded-full w-fit p-2">
+                        <div className="bg-white rounded-full w-fit p-3">
                           <Image
                             className="svg-primary"
                             src="/logo.svg"
                             alt="checkified"
-                            height={100}
-                            width={100}
+                            height={40}
+                            width={40}
                           />
                         </div>
                       </div>
@@ -134,12 +134,12 @@ export default function Profile_setting_pop({}: Props) {
                       </div>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="relative">
                     <Image
                       src="/images/dashboard/pr_form.png"
                       alt="stats"
                       fill
-                      className="static object-contain profile_pop_img"
+                      className="absolute object-contain profile_pop_img"
                     />
                   </div>
                 </div>
