@@ -20,7 +20,7 @@ export default function Layout({ headTitle, isFullWidth, children }: Props) {
       <div data-theme="light" className="overflow-hidden relative">
         <Header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         <main className="pt-header-height bg-base-100">
-          <div className="p-8 lg:p-12 bg-base-200 rounded-[3rem] flex flex-col items-center lg:flex-row gap-8">
+          <div className="p-8 lg:p-12 bg-base-200 flex flex-col items-center lg:flex-row gap-8">
             <div className="w-full lg:w-1/6 relative h-[360px]">
                 <SideHeader
                   setOpenSidebar={setOpenSidebar}
@@ -28,7 +28,7 @@ export default function Layout({ headTitle, isFullWidth, children }: Props) {
                 />
             </div>
            
-            <div className={`${isFullWidth ? "" : "container"} mx-auto isolate w-full lg:w-5/6`}>
+            <div className={`${isFullWidth ? "" : "container"} mx-auto isolate w-full lg:w-6/6`}>
               <style jsx>{`
                 .wrapper {
                   margin-right: auto;

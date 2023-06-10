@@ -13,7 +13,7 @@ const ProgressBarComponent: React.FC<ProgressBarProps> = ({ progress }) => {
 
   return (
     <div className="grid grid-cols-4 mb-4 bg-base-200 rounded-lg pr-2">
-      <Typography color="blue" variant="h6" className="bg-primary text-white rounded-lg p-2 w-fit progress_count">
+      <Typography color="blue" variant="h6" className="bg-primary text-white rounded-lg p-2 w-fit progress_count text-sm">
         {progress}%
       </Typography>
       <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 col-span-3 place-self-center">

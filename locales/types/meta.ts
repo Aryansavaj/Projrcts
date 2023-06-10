@@ -1,3 +1,4 @@
 export type MetaData = {
-  title: string
-}
+    title: string
+  }
+  

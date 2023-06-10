@@ -27,5 +27,6 @@ export default function Title({
       <span className={`text-primary `}> {blueText}</span>
       {children}
     </h1>
+    
   )
 }
