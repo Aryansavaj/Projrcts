@@ -447,7 +447,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .popup.open {
@@ -457,8 +457,8 @@
 .content {
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
-  max-width: 500px;
+  border-radius: 28px;
+  max-width: 300px;
   width: 90%;
   max-height: 90%;
   overflow: auto;
@@ -470,16 +470,15 @@
 
 @media screen and (min-width: 768px) {
   .content {
-    max-width: 700px;
+    max-width: 400px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .content {
-    max-width: 900px;
+    max-width: 500px;
   }
 }
-
 
 /*=============================================
   =           toggle button           =
@@ -554,6 +553,23 @@
 }
 
 
+.popup_form_title {
+  font-size: 26px !important;
+  margin-bottom: 0 !important;
+}
+.closeButton {
+  margin-bottom: 0 !important;
+}
+.profile_pop_img{
+  top: 75% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    width: 116% !important;
+    height: unset !important;
+    max-width: unset !important;
+}
+
+
 .right-\[-2rem\] {
   right: -2rem;
 }
@@ -588,6 +604,7 @@
 .prfoilebtn-shadow{
   box-shadow: 0px 24px 50px rgba(13, 32, 74, 0.07);
 }
+
 
 
 
