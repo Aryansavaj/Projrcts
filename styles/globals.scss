@@ -454,7 +454,7 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 300px;
   width: 90%;
   max-height: 90%;
   overflow: auto;
@@ -466,16 +466,15 @@
 
 @media screen and (min-width: 768px) {
   .content {
-    max-width: 700px;
+    max-width: 400px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .content {
-    max-width: 900px;
+    max-width: 500px;
   }
 }
-
 
 /*=============================================
   =           toggle button           =
@@ -524,7 +523,6 @@
           content: url("../public/icons/header/sun.svg") attr(data-unchecked);
         }
 
-
         &:after {
           right: 0;
           content: url("../public/icons/header/moon.svg") attr(data-checked);
@@ -550,5 +548,10 @@
   }
 }
 
-
-
+.popup_form_title {
+  font-size: 26px !important;
+  margin-bottom: 0 !important;
+}
+.closeButton{
+  margin-bottom: 0 !important;
+}
