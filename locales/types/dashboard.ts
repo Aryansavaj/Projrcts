@@ -1,43 +1,42 @@
-import { MetaData } from "./meta"
+import { MetaData } from "./meta";
 
-type PressCard = {
-  titleOne: string
-  titleTwo: string
-  infoEmail: string
-  pressEmail: string
-  titleThree: string
-}
+type Dashboard = {
+  id: number;
+  imageUrl: string;
+  title: string;
+};
 
 export type DashboardData = {
-  metaData: MetaData
+  metaData: MetaData;
 
-  dashboardTitle: string
-  dashboardSubtitle: string
+  dashboardTitle: string;
+  dashboardSubtitle: string;
 
-  pressCard: PressCard
+  dashboardData: Dashboard[]
 
-  builtTitle: string
-  builtSubtitleOne: string
-  builtSubtitlTwo: string
+  builtTitle: string;
+  builtSubtitleOne: string;
+  builtSubtitlTwo: string;
 
-  skillBlackTitle: string
-  skillBlueTitle: string
-  skillSubtitleOne: string
-  skillSubtitleTwo: string
-  skillCard: string
+  skillBlackTitle: string;
+  skillBlueTitle: string;
+  skillSubtitleOne: string;
+  skillSubtitleTwo: string;
+  skillCard: string;
 
-  aboutBlackTitle: string
-  aboutBlueTitle: string
-  aboutSubtitle: string
-  aboutLink: string
+  aboutBlackTitle: string;
+  aboutBlueTitle: string;
+  aboutSubtitle: string;
+  aboutLink: string;
 
-  brandBlackTitle: string
-  brandBlueTitle: string
-  brandSubtitle: string
-  brandDownload: string
 
-  increaseBlackTitle: string
-  increaseBlueTitle: string
-  increaseSubtitleOne: string
-  increaseSubtitleTwo: string
-}
+  brandBlackTitle: string;
+  brandBlueTitle: string;
+  brandSubtitle: string;
+  brandDownload: string;
+
+  increaseBlackTitle: string;
+  increaseBlueTitle: string;
+  increaseSubtitleOne: string;
+  increaseSubtitleTwo: string;
+};

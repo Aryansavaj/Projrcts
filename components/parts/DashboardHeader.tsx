@@ -100,19 +100,23 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
   };
 
   return (
-    <header className="bg-base-100 h-header-height fixed top-0 left-0 right-0 z-20 flex justify-between items-center">
+    <header className="bg-base-100 h-header-100 fixed top-0 left-0 right-0 z-20 flex justify-between items-center">
       <div className="container mx-auto flex justify-between items-center">
         <Link className="" href="/">
           <div className="flex items-center justify-start gap-2">
-            <Image
-              className="svg-primary object-contain"
-              src="/logo.svg"
-              alt="checkified"
-              height={44}
-              width={44}
-              priority
-            />
-            <p className="font-bold font-roboto text-2xl">Checkified</p>
+            <div className="bg-primary rounded-full w-[50px] h-[50px] flex item-center justify-center">
+              <Image
+                className="svg-white object-contain p-2"
+                src="/logo.svg"
+                alt="checkified"
+                height={44}
+                width={44}
+                priority
+              />
+            </div>
+
+
+            <p className="font-bold text-1xl">Checkified</p>
           </div>
         </Link>
 
@@ -123,11 +127,11 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
         >
           <ul className="flex flex-col lg:flex-row gap-2 lg:gap-8 h-full">
             <li>
-              <label className="btn btn-link rounded-full bg-base-100 h-14 drop-shadow-md">
+              <label className="btn btn-link rounded-full bg-base-100 h-14 cricle-shadow">
                 <div className="flex items-center justify-start gap-2">
                   <Image
                     className="object-contain"
-                    src="/notify_bell.png"
+                    src="/icons/header/notification-bing.svg"
                     alt="checkified"
                     height={28}
                     width={28}
@@ -139,7 +143,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
 
             <li>
               <label
-                className="btn btn-link rounded-full bg-base-100 h-14 drop-shadow-md"
+                className="btn btn-link rounded-full bg-base-100 h-14 prfoilebtn-shadow"
                 onClick={toggleMenu}
               >
                 <div className="flex items-center justify-start gap-2">
