@@ -20,7 +20,7 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose, children }) => {
             blueText={"Lösenord"}
             className="text-left text-[26px] popup_form_title"
           />
-          <button className="closeButton" onClick={handleClose}>
+          <button className="closeButton ml-auto" onClick={handleClose}>
             <CgCloseO />
           </button>
         </div>
