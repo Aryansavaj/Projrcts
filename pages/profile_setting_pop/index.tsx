@@ -38,17 +38,17 @@ export default function Profile_setting_pop({}: Props) {
           <section className=" bg-primary rounded-[2rem] text-white relative mb-5 isolate">
             <div className="w-full  p-7 rounded-tl-3xl rounded-bl-3xl lg:mr-auto mt-40 lg:mt-0">
               <ScrollReveal>
-                <div className="grid grid-cols-2 gap-10 place-content-between">
+                <div className="grid grid-cols-2 gap-10 place-content-between form_benner_outer">
                   <div className="form_benner_wrap">
                     <div className=" grid grid-cols-2 gap- place-content-between form_benner_logo first-letter border border-white rounded-2xl p-4">
                       <div className="bg-white p-1 rounded-full w-fit border border-white form_inner_logo ">
-                        <div className="bg-white rounded-full w-fit p-3">
+                        <div className="bg-white rounded-full w-fit p-4">
                           <Image
                             className="svg-primary"
                             src="/logo.svg"
                             alt="checkified"
-                            height={40}
-                            width={40}
+                            height={45}
+                            width={45}
                           />
                         </div>
                       </div>
