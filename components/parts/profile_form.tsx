@@ -119,7 +119,7 @@ export default function ProfileForm({ profile_pop }: Props) {
                   <input
                     type="text"
                     placeholder={profile_pop.password}
-                    className="input bg-base-200"
+                    className="input bg-base-200 w-full"
                     {...register("password")}
                   />
                   {errors.password && (
