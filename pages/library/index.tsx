@@ -24,97 +24,106 @@ export default function Dashboard({}: Props) {
 
   return (
     <Layout headTitle={t.pressData.metaData.title}>
- 
-      
       <section className="mb-8 lg:mb-8 p-8 lg:p-10 bg-base-100 rounded-[3rem] items-center lg:flex-row gap-8 ">
-            <ScrollReveal>
-              <div className="grid grid-cols-2 place-content-between flex items-baseline">
-                <Titleh6
-                  blackText="Mina"
-                  blueText="Kurser"
-                  className="text-left"
-                />
-                <h1 className="font-medium text-l mb-2 text-primary transition-all duration-200 text-right cursor-pointer flex items-center justify-end gap-1">
-                  Visa alla  
-                  <MdOutlineKeyboardArrowRight
-                    size={28}
-                    className={`transform`}
-                  />
-                </h1>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal>
-        <button className="btn bg-base-200 w-full lg:w-fit mb-6 text-subtitle border-none font-semibold">
-              Alla
-        </button>
-        <button className="btn btn-primary w-full lg:w-fit mb-6 ml-2 mr-2">
-              Pågående
-        </button>
-        <button className="btn bg-base-200 w-full lg:w-fit mb-6 text-subtitle border-none">
-              Avslutad
-        </button>
+        <ScrollReveal>
+          <div className="grid grid-cols-2 place-content-between flex items-baseline">
+            <Titleh6 blackText="Mina" blueText="Kurser" className="text-left" />
+            <h1 className="font-medium text-l mb-2 text-primary transition-all duration-200 text-right cursor-pointer flex items-center justify-end gap-1">
+              Visa alla
+              <MdOutlineKeyboardArrowRight size={28} className={`transform`} />
+            </h1>
+          </div>
         </ScrollReveal>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
-              <ScrollReveal
-                key=""
-                className="bg-white grid justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box"
-              >
-                <div>
-                  <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
-                    <Image
-                      src="/images/dashboard/image-1.png"
-                      fill
-                      alt="blog"
-                      className="absolute object-cover"
-                    />
-                  </div>
-                  <div className="w-full">
-                    <ProgressBarComponent progress={80} />
-                  </div>
-                  <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
-                    Checkified - Nyckeln till Framgång
-                  </h1>
-                </div>
-              </ScrollReveal>
-
-              <ScrollReveal className="bg-white grid justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
-                <div>
-                  <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
-                    <Image
-                      src="/images/dashboard/image-1.png"
-                      fill
-                      alt="blog"
-                      className="absolute object-cover"
-                    />
-                  </div>
-                  <div className="w-full">
-                    <ProgressBarComponent progress={80} />
-                  </div>
-                  <h1 className="font-semibold text-lgmb-2 hover:text-primary hover:underline transition-all duration-200 ">
-                    Checkified - Nyckeln till Framgång
-                  </h1>
-                </div>
-              </ScrollReveal>
-              <ScrollReveal className="bg-white grid justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
-                <div>
-                  <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
-                    <Image
-                      src="/images/dashboard/image-1.png"
-                      fill
-                      alt="blog"
-                      className="absolute object-cover"
-                    />
-                  </div>
-                  <div className="w-full">
-                    <ProgressBarComponent progress={80} />
-                  </div>
-                  <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
-                    Checkified - Nyckeln till Framgång
-                  </h1>
-                </div>
-              </ScrollReveal>
+        <ScrollReveal>
+          <button className="btn bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none font-medium text-xs pt-0 pb-0 btn-height-rem">
+            Alla
+          </button>
+          <button className="btn btn-primary w-full lg:w-fit mb-8 ml-2 mr-2 text-xs font-medium pt-0 pb-0 btn-height-rem">
+            Pågående
+          </button>
+          <button className="btn bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none text-xs font-medium pt-0 pb-0 btn-height-rem">
+            Avslutad
+          </button>
+        </ScrollReveal>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 ">
+          <ScrollReveal
+            key=""
+            className="bg-white grid justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box"
+          >
+            <div>
+              <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
+                <Image
+                  src="/images/dashboard/image-1.png"
+                  fill
+                  alt="blog"
+                  className="absolute object-cover"
+                />
+              </div>
+              <div className="w-full">
+                <ProgressBarComponent progress={80} />
+              </div>
+              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+                Checkified - Nyckeln till Framgång
+              </h1>
             </div>
-          </section>
+          </ScrollReveal>
+
+          <ScrollReveal className="bg-white grid justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
+            <div>
+              <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
+                <Image
+                  src="/images/dashboard/image-1.png"
+                  fill
+                  alt="blog"
+                  className="absolute object-cover"
+                />
+              </div>
+              <div className="w-full">
+                <ProgressBarComponent progress={80} />
+              </div>
+              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200 ">
+                Checkified - Nyckeln till Framgång
+              </h1>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal className="bg-white grid justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
+            <div>
+              <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
+                <Image
+                  src="/images/dashboard/image-1.png"
+                  fill
+                  alt="blog"
+                  className="absolute object-cover"
+                />
+              </div>
+              <div className="w-full">
+                <ProgressBarComponent progress={80} />
+              </div>
+              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+                Checkified - Nyckeln till Framgång
+              </h1>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal className="bg-white grid justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
+            <div>
+              <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
+                <Image
+                  src="/images/dashboard/image-1.png"
+                  fill
+                  alt="blog"
+                  className="absolute object-cover"
+                />
+              </div>
+              <div className="w-full">
+                <ProgressBarComponent progress={80} />
+              </div>
+              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+                Checkified - Nyckeln till Framgång
+              </h1>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
     </Layout>
   );
 }
