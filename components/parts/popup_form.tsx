@@ -47,7 +47,7 @@ export default function Popup_form({ popup_pass }: Props) {
       <div className="grid grid-cols-1 gap-4">
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {popup_pass.Current_password}
               {errors.Current_password && (
                 <span className="text-red-400">*</span>
@@ -68,7 +68,7 @@ export default function Popup_form({ popup_pass }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {popup_pass.New_password}
               {errors.New_password && <span className="text-red-400">*</span>}
             </span>
@@ -87,7 +87,7 @@ export default function Popup_form({ popup_pass }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {popup_pass.Confirm_new_password}
               {errors.Confirm_new_password && (
                 <span className="text-red-400">*</span>
