@@ -1,9 +1,14 @@
-@import "@fontsource/montserrat";
 @import url("https://fonts.googleapis.com/css?family=Poppins:500;600;700;800;900");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "MontserratRegular"; /*Can be any text*/
+  src: local("MontserratRegular"),
+    url("../public/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
 
 @mixin hide-bottom-only(
   $border-radius,
@@ -391,14 +396,27 @@
 .side_hover svg path {
   stroke: #707ba0;
 }
-.side_hover {
-  :hover .side_hover svg path {
-    stroke: red;
-  }
+
+.sidebar_menu .hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
+  filter: invert(32%) sepia(86%) saturate(1610%) hue-rotate(193deg)
+    brightness(100%) contrast(110%);
 }
 .progress_line {
   width: 50%;
   box-shadow: 0px 0px 11px rgba(0, 131, 255, 0.55);
+}
+.setting-icon {
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+}
+.profile-dropdown-icon {
+  background: rgba(255, 255, 255, 0.51);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(6px);
+  padding: 0.4rem;
+  filter: drop-shadow(0px 18px 19px rgba(0, 0, 0, 0.1));
 }
 .side_header_img {
   width: 80% !important;
@@ -433,7 +451,6 @@
   background: rgba(255, 255, 255, 0.54);
   backdrop-filter: blur(5.85015px);
 }
-
 
 .popup {
   display: none;
@@ -550,8 +567,6 @@
   }
 }
 
-
-
 .popup_form_title {
   font-size: 26px !important;
   margin-bottom: 0 !important;
@@ -559,15 +574,22 @@
 .closeButton {
   margin-bottom: 0 !important;
 }
+
+.profile_pop_img {
+  top: 75% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  width: 116% !important;
+
 .profile_pop_img{
   top: 68% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
   width: 122% !important;
+
   height: unset !important;
   max-width: unset !important;
 }
-
 
 .right-\[-2rem\] {
   right: -2rem;
@@ -603,7 +625,14 @@
 .prfoilebtn-shadow {
   box-shadow: 0px 24px 50px rgba(13, 32, 74, 0.07);
 }
-
+.btn-light-primary {
+  background: #7dc0ff;
+  color: #fff;
+  font-size: 0.83vw !important;
+}
+.btn-light-primary:hover {
+  background: #7dc0ff;
+}
 /**************Library*********************/
 .btn-height-rem {
   height: 2.2rem;
@@ -623,25 +652,25 @@
 }
 .play-tab-shadow {
   box-shadow: 0px 15px 17px rgba(0, 131, 255, 0.18);
-} 
+}
 @media (min-width: 1500px) {
   .profile_pop_img {
     width: 80% !important;
   }
 }
- 
+
 @media (min-width: 1820px) {
   .profile_pop_img {
     width: 67% !important;
   }
 }
-@media (min-width:1550px) {
-  .form_inner_icon_1 svg{
-    width: 100% !important; 
+@media (min-width: 1550px) {
+  .form_inner_icon_1 svg {
+    width: 100% !important;
   }
 }
-.closeButton svg{
-  color: #707BA0 !important;
+.closeButton svg {
+  color: #707ba0 !important;
   font-size: larger;
 }
 .form-text-color{ 
