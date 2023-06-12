@@ -14,6 +14,7 @@ import sv from "@/locales/sv";
 
 type Props = {};
 
+
 export default function Dashboard({}: Props) {
   const router = useRouter();
   const { locale } = router;
