@@ -662,3 +662,12 @@
 .form_benner_outer{
   gap: 3.5rem;
 }
+.edit-icon{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate( -50%, -50%);
+}
+.icon-field{
+  position: relative;
+}
