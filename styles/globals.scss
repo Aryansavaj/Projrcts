@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100;300;800");
+@import "@fontsource/montserrat";
 @import url("https://fonts.googleapis.com/css?family=Poppins:500;600;700;800;900");
 
 @tailwind base;
@@ -547,6 +547,9 @@
   min-height: 2.2rem;
 }
 /****************coursedetail*****************************/
+.font-montserrat{
+  
+}
 .play-video-sm {
   width: 35px;
   height: 35px;
