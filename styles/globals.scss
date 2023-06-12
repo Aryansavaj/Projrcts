@@ -604,6 +604,11 @@
 .prfoilebtn-shadow{
   box-shadow: 0px 24px 50px rgba(13, 32, 74, 0.07);
 }
+@media (min-width: 1500px) {
+  .profile_pop_img {
+    width: 116% !important;
+  }
+}
 
 
 
