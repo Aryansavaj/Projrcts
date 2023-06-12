@@ -14,9 +14,9 @@ export const Popup_form: Popupform = {
   formSubtitle:
     "Om du har några frågor eller funderingar kan du kontakta vårt supportteam; vi svarar inom 24 timmar.",
   profileForm: {
-    Current_password: "Förnamn",
-    New_password: "Efternamn",
-    Confirm_new_password: "Mejladress",
+    Current_password: "Nuvarande Lösenord",
+    New_password: "Nytt Lösenord",
+    Confirm_new_password: "Bekräfta Nytt Lösenord",
     button: "Skicka",
   },
 
