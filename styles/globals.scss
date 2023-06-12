@@ -604,19 +604,20 @@
 .prfoilebtn-shadow{
   box-shadow: 0px 24px 50px rgba(13, 32, 74, 0.07);
 }
-
+ 
 @media (min-width: 1500px) {
   .profile_pop_img {
     width: 80% !important;
   }
 }
-
+ 
 @media (min-width: 1820px) {
   .profile_pop_img {
     width: 67% !important;
   }
 }
-
-
-
-
+@media (min-width:1550px) {
+  .form_inner_icon_1 svg{
+    width: 100% !important; 
+  }
+}
