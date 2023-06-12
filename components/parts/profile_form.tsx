@@ -50,7 +50,7 @@ export default function ProfileForm({ profile_pop }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profile_pop.firstName}
               {errors.firstName && <span className="text-red-400">*</span>}
             </span>
@@ -69,7 +69,7 @@ export default function ProfileForm({ profile_pop }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profile_pop.lastName}
               {errors.lastName && <span className="text-red-400">*</span>}
             </span>
@@ -88,7 +88,7 @@ export default function ProfileForm({ profile_pop }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profile_pop.mail}
               {errors.mail && <span className="text-red-400">*</span>}
             </span>
@@ -105,7 +105,7 @@ export default function ProfileForm({ profile_pop }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profile_pop.password}
               {errors.password && <span className="text-red-400">*</span>}
             </span>
