@@ -56,8 +56,8 @@ export default function Profile_setting_pop({}: Props) {
                         <div className="form_benner_icon grid grid-cols-2 place-content-center rounded-lg w-fit mx-auto">
                           <div className="form_inner_icon_1 bg-primary rounded-lg py-2 px-3">
                             <svg
-                              width="19"
-                              height="19"
+                              width="21"
+                              height="21"
                               viewBox="0 0 19 19"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +87,8 @@ export default function Profile_setting_pop({}: Props) {
                           </div>
                           <div className="form_inner_icon_2 py-2 px-3">
                             <svg
-                              width="19"
-                              height="19"
+                              width="21"
+                              height="21"
                               viewBox="0 0 19 19"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
