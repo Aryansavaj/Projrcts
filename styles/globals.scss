@@ -574,11 +574,19 @@
 .closeButton {
   margin-bottom: 0 !important;
 }
+
 .profile_pop_img {
   top: 75% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
   width: 116% !important;
+
+.profile_pop_img{
+  top: 68% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  width: 122% !important;
+
   height: unset !important;
   max-width: unset !important;
 }
@@ -664,4 +672,40 @@
 .closeButton svg {
   color: #707ba0 !important;
   font-size: larger;
+}
+.form-text-color{ 
+  color: #151E3A !important;
+}
+.form_benner_logo{
+  padding-left: 23px !important;
+  padding-right: 23px !important;
+  padding-top: 19px !important;
+  padding-bottom: 19px !important;
+}
+.form_benner_icon{
+  margin-right: 18px !important;
+}
+.form_inner_logo{
+  padding: 5.5px !important;
+}
+.form_benner_outer{
+  gap: 3.5rem;
+}
+.edit-icon{
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  transform: translate( -50%, -50%);
+}
+.icon-field{
+  position: relative;
+}
+.input {
+  font-size: 0.775rem !important;
+}
+.btn-spara{
+  padding-right: 47px;
+    font-size: 14px !important;
+    padding-left: 47px;
+    margin-bottom: 4rem;
 }

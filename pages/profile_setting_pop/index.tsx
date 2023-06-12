@@ -38,17 +38,17 @@ export default function Profile_setting_pop({}: Props) {
           <section className=" bg-primary rounded-[2rem] text-white relative mb-5 isolate">
             <div className="w-full  p-7 rounded-tl-3xl rounded-bl-3xl lg:mr-auto mt-40 lg:mt-0">
               <ScrollReveal>
-                <div className="grid grid-cols-2 gap-10 place-content-between">
+                <div className="grid grid-cols-2 gap-10 place-content-between form_benner_outer">
                   <div className="form_benner_wrap">
                     <div className=" grid grid-cols-2 gap- place-content-between form_benner_logo first-letter border border-white rounded-2xl p-4">
                       <div className="bg-white p-1 rounded-full w-fit border border-white form_inner_logo ">
-                        <div className="bg-white rounded-full w-fit p-3">
+                        <div className="bg-white rounded-full w-fit p-4">
                           <Image
                             className="svg-primary"
                             src="/logo.svg"
                             alt="checkified"
-                            height={40}
-                            width={40}
+                            height={45}
+                            width={45}
                           />
                         </div>
                       </div>
@@ -56,8 +56,8 @@ export default function Profile_setting_pop({}: Props) {
                         <div className="form_benner_icon grid grid-cols-2 place-content-center rounded-lg w-fit mx-auto">
                           <div className="form_inner_icon_1 bg-primary rounded-lg py-2 px-3">
                             <svg
-                              width="19"
-                              height="19"
+                              width="21"
+                              height="21"
                               viewBox="0 0 19 19"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +87,8 @@ export default function Profile_setting_pop({}: Props) {
                           </div>
                           <div className="form_inner_icon_2 py-2 px-3">
                             <svg
-                              width="19"
-                              height="19"
+                              width="21"
+                              height="21"
                               viewBox="0 0 19 19"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ export default function Profile_setting_pop({}: Props) {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/images/dashboard/pr_form.png"
+                      src="/images/profile_setting_pop/banner.png"
                       alt="stats"
                       fill
                       className="absolute object-contain profile_pop_img"
@@ -149,7 +149,7 @@ export default function Profile_setting_pop({}: Props) {
           <ProfileForm profile_pop={profile_pop.profileForm} />
           <div className="text-end">
             <button
-              className="btn btn-primary w-full lg:w-fit mb-6 mt-6"
+              className="btn btn-primary w-full lg:w-fit mb-6 mt-6 btn-spara"
               onClick={handleOpenPopup}
               type="button"
             >
