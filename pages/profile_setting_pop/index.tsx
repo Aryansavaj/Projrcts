@@ -136,7 +136,7 @@ export default function Profile_setting_pop({}: Props) {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/images/dashboard/pr_form.png"
+                      src="/images/profile_setting_pop/banner.png"
                       alt="stats"
                       fill
                       className="absolute object-contain profile_pop_img"
