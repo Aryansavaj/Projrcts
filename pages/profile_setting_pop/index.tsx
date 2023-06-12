@@ -149,7 +149,7 @@ export default function Profile_setting_pop({}: Props) {
           <ProfileForm profile_pop={profile_pop.profileForm} />
           <div className="text-end">
             <button
-              className="btn btn-primary w-full lg:w-fit mb-6 mt-6"
+              className="btn btn-primary w-full lg:w-fit mb-6 mt-6 btn-spara"
               onClick={handleOpenPopup}
               type="button"
             >
