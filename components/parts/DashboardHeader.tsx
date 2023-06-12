@@ -115,7 +115,6 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
               />
             </div>
 
-
             <p className="font-bold text-1xl">Checkified</p>
           </div>
         </Link>
@@ -186,7 +185,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
                   <div className="profile-details relative -mt-8">
                     <div className="profile-pic rounded-full flex justify-center ">
                       <Image
-                        className="object-contain border-2 border-white-500/100 rounded-full p-1"
+                        className="object-contain border-2 border-white-500/100 rounded-full profile-dropdown-icon"
                         src="/images/profilepic.png"
                         alt="Video Placeholder"
                         width={80}
@@ -195,7 +194,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
                       />
                     </div>
 
-                    <h2 className="font-bold text-xl mt-2">John Smith</h2>
+                    <h2 className="font-semibold text-base mt-4">John Smith</h2>
                   </div>
                   <hr className="my-8" />
                   <div className="grid grid-cols-1 lg:grid-cols-1">
@@ -211,58 +210,62 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
                     </div>
 
                     <Link key="" href="">
-                      <div className="mega-menu-list items-center flex gap-3 items-start hover:bg-base-200 p-2 rounded-lg">
+                      <div className="mega-menu-list items-center flex gap-3 items-start rounded-lg">
                         <div className="list-icon bg-base-100 p-2 rounded-lg">
                           <Image
                             src="/icons/header/profile.png"
                             alt="Mega menu icon"
                             className="object-contain"
-                            width={30}
-                            height={30}
+                            width={25}
+                            height={25}
                             priority
                           />
                         </div>
 
                         <div className="menu-content">
-                          <h2 className="font-semibold text-left">Konto</h2>
+                          <h2 className="font-medium text-xs  text-left">
+                            Konto
+                          </h2>
                         </div>
                       </div>
                     </Link>
                     <Link key="" href="">
-                      <div className="mega-menu-list items-center flex gap-3 items-start hover:bg-base-200 p-2 rounded-lg">
+                      <div className="mega-menu-list items-center flex gap-3 items-start rounded-lg">
                         <div className="list-icon bg-base-100 p-2 rounded-lg">
                           <Image
                             src="/icons/header/info-circle.png"
                             alt="Mega menu icon"
                             className="object-contain"
-                            width={30}
-                            height={30}
+                            width={25}
+                            height={25}
                             priority
                           />
                         </div>
 
                         <div className="menu-content">
-                          <h2 className="font-semibold text-left">
+                          <h2 className="font-medium text-xs text-left">
                             Hjälpcenter
                           </h2>
                         </div>
                       </div>
                     </Link>
                     <Link key="" href="">
-                      <div className="mega-menu-list items-center flex gap-3 items-start hover:bg-base-200 p-2 rounded-lg">
+                      <div className="mega-menu-list items-center flex gap-3 items-start rounded-lg">
                         <div className="list-icon bg-base-100 p-2 rounded-lg">
                           <Image
                             src="/icons/header/logout.png"
                             alt="Mega menu icon"
                             className="object-contain"
-                            width={30}
-                            height={30}
+                            width={25}
+                            height={25}
                             priority
                           />
                         </div>
 
                         <div className="menu-content">
-                          <h2 className="font-semibold text-left">Logga ut</h2>
+                          <h2 className="font-medium text-xs text-left text-red-600">
+                            Logga ut
+                          </h2>
                         </div>
                       </div>
                     </Link>
