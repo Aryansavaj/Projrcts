@@ -196,7 +196,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
 
                     <h2 className="font-semibold text-base mt-4">John Smith</h2>
                   </div>
-                  <hr className="my-8" />
+                  <hr className="my-8 hr-height" />
                   <div className="grid grid-cols-1 lg:grid-cols-1">
                     <div className="custom-checkbox">
                       <input id="status" type="checkbox" name="status" />
