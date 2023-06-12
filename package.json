@@ -1,45 +1,47 @@
 {
-  "name": "nextjs-checkified",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@hookform/resolvers": "^3.0.0",
-    "@material-tailwind/react": "^2.0.1",
-    "@types/node": "18.15.0",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "18.0.11",
-    "daisyui": "^2.51.3",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "framer-motion": "^10.8.4",
-    "hamburger-react": "^2.5.0",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-hook-form": "^7.43.7",
-    "react-icons": "^4.9.0",
-    "react-parallax-tilt": "^1.7.119",
-    "react-string-replace": "^1.1.0",
-    "sass": "^1.59.2",
-    "swiper": "^9.1.1",
-    "typescript": "4.9.5",
-    "yup": "^1.0.2"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
-    "@types/react-slick": "^0.23.10",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "name": "nextjs-checkified",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@fontsource/montserrat": "^5.0.3",
+      "@fortawesome/fontawesome-svg-core": "^6.4.0",
+      "@fortawesome/free-regular-svg-icons": "^6.4.0",
+      "@fortawesome/free-solid-svg-icons": "^6.4.0",
+      "@fortawesome/react-fontawesome": "^0.2.0",
+      "@hookform/resolvers": "^3.0.0",
+      "@material-tailwind/react": "^2.0.1",
+      "@types/node": "18.15.0",
+      "@types/react": "^18.0.28",
+      "@types/react-dom": "18.0.11",
+      "daisyui": "^2.51.3",
+      "eslint": "8.36.0",
+      "eslint-config-next": "13.2.4",
+      "framer-motion": "^10.8.4",
+      "hamburger-react": "^2.5.0",
+      "next": "13.2.4",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-hook-form": "^7.43.7",
+      "react-icons": "^4.9.0",
+      "react-parallax-tilt": "^1.7.119",
+      "react-string-replace": "^1.1.0",
+      "sass": "^1.59.2",
+      "swiper": "^9.1.1",
+      "typescript": "4.9.5",
+      "yup": "^1.0.2"
+    },
+    "devDependencies": {
+      "@tailwindcss/typography": "^0.5.9",
+      "@types/react-slick": "^0.23.10",
+      "autoprefixer": "^10.4.14",
+      "postcss": "^8.4.21",
+      "tailwindcss": "^3.2.7"
+    }
   }
-}
+  

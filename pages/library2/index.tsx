@@ -5,12 +5,15 @@ import { HiOutlineClock } from "react-icons/hi";
 import { useRouter } from "next/router";
 
 import Title from "@/components/parts/Title";
+import Titleh6 from "@/components/parts/Titleh6";
 import Layout from "@/components/DashboardLayout";
 import FadeLogo from "@/components/graphic/FadeLogo";
 import ScrollReveal from "@/components/transition/ScrollReveal";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Progress, Typography } from "@material-tailwind/react";
 import en from "@/locales/en";
 import sv from "@/locales/sv";
+import ProgressBarComponent from "@/components/parts/progress_bar";
 
 type Props = {};
 
@@ -21,224 +24,87 @@ export default function Dashboard({}: Props) {
 
   return (
     <Layout headTitle={t.pressData.metaData.title}>
-      <section className="mb-8 lg:mb-8"></section>
-      <section className="p-8 lg:p-12 bg-base-100 rounded-[3rem] items-center lg:flex-row gap-8">
-        <ScrollReveal>
-          <div className="grid grid-cols-2 place-content-between ">
-            <Title blackText={"Kursplaner"} className="text-left" />
-          </div>
-        </ScrollReveal>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
+      
+      <div className="flex flex-wrap mt-3 -mx-3">
+        <div className="w-full max-w-full px-3 flex-0 lg:w-9/12">
+         
+
+          <section className="p-8 lg:p-10 bg-base-100 rounded-[3rem] items-center lg:flex-row gap-8 ">
+            <ScrollReveal>
+              <div className="grid grid-cols-2 place-content-between flex items-baseline">
+                <Titleh6
+                  blackText="Kursplaner"
+                  blueText=""
+                  className="text-left"
                 />
+                
               </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
+              <ScrollReveal
+                key=""
+                className="bg-white justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box"
+              >
+                <div>
+                  <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
+                    <Image
+                      src="/images/dashboard/image-1.png"
+                      fill
+                      alt="blog"
+                      className="absolute object-cover"
+                    />
+                  </div>
+                  <div className="w-full">
+                    <ProgressBarComponent progress={80} />
+                  </div>
+                  <h1 className="font-semibold text-md mb-2 hover:text-primary hover:underline transition-all duration-200">
+                  1. Introduktion
+                  </h1>
                 </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
-                />
-              </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
+              </ScrollReveal>
+
+              <ScrollReveal className="bg-white justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
+                <div>
+                  <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
+                    <Image
+                      src="/images/dashboard/image-1.png"
+                      fill
+                      alt="blog"
+                      className="absolute object-cover"
+                    />
+                  </div>
+                  <div className="w-full">
+                    <ProgressBarComponent progress={80} />
+                  </div>
+                  <h1 className="font-semibold text-md mb-2 hover:text-primary hover:underline transition-all duration-200 ">
+                    2. Produktforskning
+                  </h1>
                 </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
-                />
-              </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
+              </ScrollReveal>
+              <ScrollReveal className="bg-white justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
+                <div>
+                  <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
+                    <Image
+                      src="/images/dashboard/image-1.png"
+                      fill
+                      alt="blog"
+                      className="absolute object-cover"
+                    />
+                  </div>
+                  <div className="w-full">
+                    <ProgressBarComponent progress={80} />
+                  </div>
+                  <h1 className="font-semibold text-md mb-2 hover:text-primary hover:underline transition-all duration-200">
+                    3. E-handels Infrastruktur
+                  </h1>
                 </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
+              </ScrollReveal>
             </div>
-          </ScrollReveal>
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
-                />
-              </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
-                />
-              </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
-                />
-              </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
-                />
-              </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal className="bg-white grid justify-between rounded-lg p-4 cursor-pointer transition-all duration-150">
-            <div>
-              <div className="w-full h-[150px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
-                <Image
-                  src="/images/dashboard/image-1.png"
-                  fill
-                  alt="blog"
-                  className="absolute object-cover"
-                />
-              </div>
-              <div className="w-full">
-                <div className="flex items-center justify-between gap-4 mb-2">
-                  <Typography color="blue" variant="h6">
-                    50%
-                  </Typography>
-                  <Typography color="blue" variant="h6">
-                    Completed
-                  </Typography>
-                </div>
-                <Progress value={50} />
-              </div>
-              <h1 className="font-bold text-l mb-2 hover:text-primary hover:underline transition-all duration-200">
-                Checkified - Nyckeln till Framgång
-              </h1>
-            </div>
-          </ScrollReveal>
+          </section>
         </div>
-      </section>
+      </div>
+
     </Layout>
   );
 }
