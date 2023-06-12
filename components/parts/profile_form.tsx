@@ -47,7 +47,7 @@ export default function ProfileForm({ profile_pop }: Props) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="" action="">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="form-control">
           <label className="label">
             <span className="label-text form-text-color">
