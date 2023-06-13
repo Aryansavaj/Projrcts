@@ -9,7 +9,11 @@
   src: local("MontserratRegular"),
     url("../public/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
-
+@font-face {
+  font-family: "Montserratextrabold"; /*Can be any text*/
+  src: local("MontserratExtrabold"),
+    url("../public/fonts//Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+}
 @mixin hide-bottom-only(
   $border-radius,
   $shadow-height,
@@ -648,7 +652,9 @@
 .font-mont{
 font-family: "MontserratRegular";
 }
-
+.font-extrabold-mont{
+  font-family: "Montserratextrabold";
+}
 .text-707BA0 {
   color: #707ba0;
 }
