@@ -88,7 +88,7 @@ export default function Profilesetting({}: Props) {
                       <div>
                         <button
                           type="button"
-                          className="btn mr-2  w-full btn-primary items-center px-3 py-1 relative"
+                          className="btn mr-2  w-full btn-primary items-center px-3 py-1 relative overflow-hidden"
                         >
                           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute absolute_obje_position">
                             <path d="M30.1011 16.0353C30.1011 23.7779 23.7942 30.0662 15.9998 30.0662C8.20542 30.0662 1.89844 23.7779 1.89844 16.0353C1.89844 8.29263 8.20542 2.00439 15.9998 2.00439C23.7942 2.00439 30.1011 8.29263 30.1011 16.0353Z" stroke="url(#paint0_linear_1_2)" stroke-width="3"/>
