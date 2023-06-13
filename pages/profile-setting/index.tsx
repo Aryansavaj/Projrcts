@@ -68,7 +68,7 @@ export default function Profilesetting({}: Props) {
               <div className="bg-glass-light p-3 rounded-2xl">
                 <div className="flex justify-between items-center bg-base-200 py-4 px-4 hover:bg-base-200 rounded-2xl job-openings-shadow">
                   <Link key="" href="">
-                    <div className="mega-menu-list items-center flex gap-3 items-start  rounded-lg">
+                    <div className="mega-menu-list items-center flex gap-4 items-start  rounded-lg">
                       <div className="list-icon bg-base-200 rounded-lg">
                         <Image
                           src="/icons/pricing/2-premium.png"
