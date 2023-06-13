@@ -151,7 +151,7 @@ export default function Profilesetting({}: Props) {
                     </div>
 
                     <div>
-                    <button className="btn hover:text-primary hover:border-primary btn-white text-[14px]">
+                    <button className="btn hover:text-primary hover:border-primary btn-white text-[14px] py-2 px-6 pro_pri_btn">
                     14 997 :-
                     </button>
                       
