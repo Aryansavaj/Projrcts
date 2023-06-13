@@ -184,7 +184,7 @@ export default function Profilesetting({}: Props) {
                 <div className="flex items-center py-1 px-1 justify-center">
                   <Link key="" href="">
                     <div className="items-center flex">
-                      <h2 className="font-bold text-center text-white text-[16px]">
+                      <h2 className="font-medium text-center text-white text-[16px]">
                         Fortsätt till Betalning
                       </h2>
                     </div>
