@@ -51,7 +51,7 @@ export default function ProfileForm({ profileData }: Props) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="" action="">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 colunm_gap_form">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 colunm_row_gap_form">
         <div className="form-control">
           <label className="label">
             <span className="label-text form-text-color font-medium">
