@@ -136,7 +136,7 @@ export default function Profilesetting({}: Props) {
                     </div>
 
                     <div>
-                    <h2 className="font-semibold text-white">14 997 :- </h2>
+                    <h2 className="font-semibold text-white pro_setting_side_font">14 997 :- </h2>
                       
                     </div>
                   
@@ -147,11 +147,11 @@ export default function Profilesetting({}: Props) {
                 >
                   
                     <div className="list-icon rounded-lg bg-transparent">
-                      <h2 className="font-semibold text-primary">Totalt</h2>
+                      <h2 className="font-semibold text-primary text-sm">Totalt</h2>
                     </div>
 
                     <div>
-                    <button className="btn hover:text-primary hover:border-primary btn-white">
+                    <button className="btn hover:text-primary hover:border-primary btn-white text-[14px]">
                     14 997 :-
                     </button>
                       
@@ -164,7 +164,7 @@ export default function Profilesetting({}: Props) {
                 <div className="flex items-center py-1 px-1 justify-center">
                   <Link key="" href="">
                     <div className="items-center flex">
-                      <h2 className="font-bold text-center text-white text-[20px]">
+                      <h2 className="font-bold text-center text-white text-[16px]">
                         Fortsätt till Betalning
                       </h2>
                     </div>
