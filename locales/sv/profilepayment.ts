@@ -20,7 +20,7 @@ export const profilepaymentdata: ProfilePaymentData = {
     zipcodeNumber:"Postnummer",
     city:"Stad",
     country:"Land",
-    button: "btn_pro_payment"
+    button: "Betala köp"
   },
 
   supportData: [
