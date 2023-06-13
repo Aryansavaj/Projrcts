@@ -723,10 +723,10 @@
   font-size: 0.625rem;
 }
 .profile_grid_set{
-  grid-template-columns: repeat(13, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(14, minmax(0, 1fr)) !important;
 }
 .profile_grid_inner_set_1{
-  grid-column: span 8 / span 8 !important;
+  grid-column: span 9 / span 9 !important;
 }
 .profile_grid_inner_set_2{
   grid-column: span 5 / span 5;
