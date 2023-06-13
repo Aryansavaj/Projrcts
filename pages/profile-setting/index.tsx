@@ -116,7 +116,7 @@ export default function Profilesetting({}: Props) {
                     <input
                       type="text"
                       placeholder="Rabattkod"
-                      className="px-4 py-3 rounded-lg mr-2 text-subtitle-dark focus:outline-primary bg-transparent placeholder-gray-200"
+                      className="px-4 py-3 rounded-lg mr-2 text-subtitle-dark focus:outline-primary bg-transparent placeholder-gray-200 text-sm"
                     />
                     <button className="btn btn-primary absolute right-0 text-white hover:bg-white hover:text-primary hover:border-primary">
                       Tillämpa
