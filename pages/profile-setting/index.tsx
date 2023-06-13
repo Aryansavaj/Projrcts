@@ -55,7 +55,7 @@ export default function Profilesetting({}: Props) {
           <ProfileForm profileData={profiledata.profileForm} />
         </div>
 
-        <div className="p-8 lg:p-8 bg-primary rounded-[28px] gap-8 profile_grid_inner_set_2">
+        <div className="p-8 lg:p-8 bg-primary rounded-[28px] gap-8 profile_grid_inner_set_2 h-5/6">
           <ScrollReveal>
             <Title
               blackText={"Din Kundvagn"}
