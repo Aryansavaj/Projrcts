@@ -111,14 +111,14 @@ export default function Profilesetting({}: Props) {
               </div>
 
               <div className="bg-glass rounded-2xl">
-                <div key="" className="py-2 px-2">
+                <div key="" className="py-2 px-4">
                   <div className=" flex relative">
                     <input
                       type="text"
                       placeholder="Rabattkod"
-                      className="px-4 py-3 rounded-lg mr-2 text-subtitle-dark focus:outline-primary bg-transparent placeholder-gray-200 text-sm"
+                      className="py-3 rounded-lg text-subtitle-dark focus:outline-primary bg-transparent placeholder-gray-200 text-sm"
                     />
-                    <button className="btn btn-primary absolute right-0 text-white hover:bg-white hover:text-primary hover:border-primary text-sm">
+                    <button className="btn btn-primary right-0 text-white hover:bg-white hover:text-primary hover:border-primary text-sm">
                       Tillämpa
                     </button>
                   </div>
