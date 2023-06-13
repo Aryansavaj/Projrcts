@@ -61,7 +61,7 @@ export default function Profilepayment({}: Props) {
         </div>
 
 
-        <div className="p-8 lg:p-8 bg-primary rounded-[28px] gap-8 profile_grid_inner_set_2">
+        <div className="p-8 lg:p-8 bg-primary rounded-[28px] gap-8 profile_grid_inner_set_2 side_payment_bar">
           <ScrollReveal>
             <Title
               blackText={"Din Kundvagn"}
