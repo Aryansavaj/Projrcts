@@ -54,7 +54,7 @@ export default function Profilepayment({}: Props) {
             <Title
               blackText=""
               blueText="Kortuppgifter"
-              className="mx-auto text-26"
+              className="mx-auto text-26 title-font-size"
             />
           </ScrollReveal>
           <ProfilePayForm profilepayData={profilepaymentdata.profilePayment} />
