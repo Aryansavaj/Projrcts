@@ -20,7 +20,7 @@ export default function Layout({ headTitle, isFullWidth, children }: Props) {
       <div data-theme="light" className="overflow-hidden relative">
         <Header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         <main className="pt-header-height bg-base-100">
-          <div className="p-8 lg:p-12 bg-base-200 flex flex-col items-center lg:flex-row gap-8 height-fullscreen">
+          <div className="p-8 lg:p-12 bg-base-200 flex flex-col lg:flex-row gap-8 height-fullscreen">
             <div className="w-full lg:w-1/6 relative h-[360px]">
                 <SideHeader
                   setOpenSidebar={setOpenSidebar}
