@@ -54,7 +54,7 @@ export default function ProfileForm({ profileData }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profileData.firstName}
               {errors.firstName && <span className="text-red-400">*</span>}
             </span>
@@ -73,7 +73,7 @@ export default function ProfileForm({ profileData }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profileData.lastName}
               {errors.lastName && <span className="text-red-400">*</span>}
             </span>
@@ -92,7 +92,7 @@ export default function ProfileForm({ profileData }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profileData.streetaddress}
               {errors.streetaddress && <span className="text-red-400">*</span>}
             </span>
@@ -111,7 +111,7 @@ export default function ProfileForm({ profileData }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profileData.zipcodeNumber}
               {errors.zipcode && <span className="text-red-400">*</span>}
             </span>
@@ -128,7 +128,7 @@ export default function ProfileForm({ profileData }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profileData.city}
               {errors.city && <span className="text-red-400">*</span>}
             </span>
@@ -145,7 +145,7 @@ export default function ProfileForm({ profileData }: Props) {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">
+            <span className="label-text form-text-color">
               {profileData.country}
               {errors.country && <span className="text-red-400">*</span>}
             </span>
