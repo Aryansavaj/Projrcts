@@ -14,12 +14,10 @@ export const profilepaymentdata: ProfilePaymentData = {
   formSubtitle:
     "Om du har några frågor eller funderingar kan du kontakta vårt supportteam; vi svarar inom 24 timmar.",
     profilePayment: {
-    firstName: "Förnamn",
-    lastName: "Efternamn",
-    streetaddress: "Gatuadress",
-    zipcodeNumber:"Postnummer",
-    city:"Stad",
-    country:"Land",
+    namecard: "Namn på kortet",
+    cardNumber: "Kortnummer",
+    validitydate: "Giltighetsdatum",
+    cvc:"CVC",
     button: "Betala köp"
   },
 
