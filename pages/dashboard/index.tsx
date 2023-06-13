@@ -27,8 +27,8 @@ export default function Dashboard({}: Props) {
   return (
     <Layout headTitle={dashboardData.metaData.title}>
       <div className="flex flex-wrap mt-3 -mx-3">
-        <div className="w-full max-w-full px-3 flex-0 lg:w-9/12">
-          <section className="bg-primary rounded-[2rem] py-12 lg:py-5 text-white relative mb-10 isolate">
+        <div className="w-full max-w-full pr-3 flex-0 lg:w-9/12">
+          <section className="bg-primary rounded-[28px] py-12 lg:py-5 text-white relative mb-10 isolate">
             <div className="w-full lg:w-1/2  p-8 lg:px-8 lg:py-[29px] lg:mr-auto mt-40 lg:mt-0">
               <FadeLogo
                 positionClassName="left-[-2rem] bottom-[-2rem] absolute"
@@ -54,7 +54,7 @@ export default function Dashboard({}: Props) {
               />
             </div>
 
-            <div className="absolute w-full h-[300px] lg:w-[520px] lg:h-[520px] xl:w-[435px] xl:h-[259px] -top-10 -right-2 lg:top-[1rem] xl:top-[-3rem] lg:-right-10 xl:right-[1rem] z-[-1]">
+            <div className="absolute w-full h-[300px] lg:w-[520px] lg:h-[520px] xl:w-[370px] xl:h-[259px] -top-10 -right-2 lg:top-[1rem] xl:top-[-3rem] lg:-right-10 xl:right-[1rem] z-[-1]">
               <Image
                 src="/images/dashboard/man-ask.png"
                 alt="stats"
@@ -64,16 +64,16 @@ export default function Dashboard({}: Props) {
             </div>
           </section>
 
-          <section className="p-8 lg:p-10 bg-base-100 rounded-[3rem] items-center lg:flex-row gap-8 ">
+          <section className="p-8 lg:p-10 bg-base-100 rounded-[28px] items-center lg:flex-row gap-8 ">
             <ScrollReveal>
               <div className="grid grid-cols-2 place-content-between flex items-baseline">
                 <Titleh6
                   blackText="Mina"
                   blueText="Kurser"
-                  className="text-left"
+                  className="text-left text-lg font-bold mb-8"
                 />
                 <h1 className="font-medium text-l mb-2 text-primary transition-all duration-200 text-right cursor-pointer flex items-center justify-end gap-1">
-                  Visa alla  
+                  Visa alla
                   <MdOutlineKeyboardArrowRight
                     size={28}
                     className={`transform`}
@@ -99,7 +99,7 @@ export default function Dashboard({}: Props) {
                   <div className="w-full">
                     <ProgressBarComponent progress={80} />
                   </div>
-                  <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+                  <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200">
                     Checkified - Nyckeln till Framgång
                   </h1>
                 </div>
@@ -118,7 +118,7 @@ export default function Dashboard({}: Props) {
                   <div className="w-full">
                     <ProgressBarComponent progress={80} />
                   </div>
-                  <h1 className="font-semibold text-lgmb-2 hover:text-primary hover:underline transition-all duration-200 ">
+                  <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200 ">
                     Checkified - Nyckeln till Framgång
                   </h1>
                 </div>
@@ -136,7 +136,7 @@ export default function Dashboard({}: Props) {
                   <div className="w-full">
                     <ProgressBarComponent progress={80} />
                   </div>
-                  <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+                  <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200">
                     Checkified - Nyckeln till Framgång
                   </h1>
                 </div>

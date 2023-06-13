@@ -24,27 +24,23 @@ export default function Dashboard({}: Props) {
 
   return (
     <Layout headTitle={t.pressData.metaData.title}>
-      
       <div className="flex flex-wrap mt-3 -mx-3">
         <div className="w-full max-w-full px-3 flex-0 lg:w-9/12">
-         
-
-          <section className="p-8 lg:p-10 bg-base-100 rounded-[3rem] items-center lg:flex-row gap-8 ">
+          <section className="p-8 lg:p-10 bg-base-100 rounded-[28px] items-center lg:flex-row gap-8 ">
             <ScrollReveal>
               <div className="grid grid-cols-2 place-content-between flex items-baseline">
                 <Titleh6
                   blackText="Kursplaner"
-                  blueText=""
-                  className="text-left"
+                  blueText=" "
+                  className="text-left text-lg font-bold mb-8"
                 />
-                
               </div>
             </ScrollReveal>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
               <ScrollReveal
                 key=""
-                className="bg-white justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box"
+                className="bg-white grid rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box"
               >
                 <div>
                   <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
@@ -58,13 +54,13 @@ export default function Dashboard({}: Props) {
                   <div className="w-full">
                     <ProgressBarComponent progress={80} />
                   </div>
-                  <h1 className="font-semibold text-md mb-2 hover:text-primary hover:underline transition-all duration-200">
-                  1. Introduktion
+                  <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200">
+                    1. Introduktion
                   </h1>
                 </div>
               </ScrollReveal>
 
-              <ScrollReveal className="bg-white justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
+              <ScrollReveal className="bg-white grid rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
                 <div>
                   <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
                     <Image
@@ -77,12 +73,12 @@ export default function Dashboard({}: Props) {
                   <div className="w-full">
                     <ProgressBarComponent progress={80} />
                   </div>
-                  <h1 className="font-semibold text-md mb-2 hover:text-primary hover:underline transition-all duration-200 ">
+                  <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200 ">
                     2. Produktforskning
                   </h1>
                 </div>
               </ScrollReveal>
-              <ScrollReveal className="bg-white justify-between rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
+              <ScrollReveal className="bg-white grid rounded-[25px] p-4 cursor-pointer transition-all duration-150 box-shadow-box">
                 <div>
                   <div className="w-full h-[150px] relative rounded-[18px] overflow-hidden mb-6 shadow-lg">
                     <Image
@@ -95,7 +91,7 @@ export default function Dashboard({}: Props) {
                   <div className="w-full">
                     <ProgressBarComponent progress={80} />
                   </div>
-                  <h1 className="font-semibold text-md mb-2 hover:text-primary hover:underline transition-all duration-200">
+                  <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200">
                     3. E-handels Infrastruktur
                   </h1>
                 </div>
@@ -104,7 +100,6 @@ export default function Dashboard({}: Props) {
           </section>
         </div>
       </div>
-
     </Layout>
   );
 }

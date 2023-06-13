@@ -24,24 +24,28 @@ export default function Dashboard({}: Props) {
 
   return (
     <Layout headTitle={t.pressData.metaData.title}>
-      <section className="mb-8 lg:mb-8 p-8 lg:p-10 bg-base-100 rounded-[3rem] items-center lg:flex-row gap-8 ">
+      <section className="p-8 lg:p-10 bg-base-100 rounded-[28px] items-center lg:flex-row gap-8 ">
         <ScrollReveal>
           <div className="grid grid-cols-2 place-content-between flex items-baseline">
-            <Titleh6 blackText="Mina" blueText="Kurser" className="text-left" />
+            <Titleh6
+              blackText="Mina"
+              blueText="Kurser"
+              className="text-left text-lg font-bold mb-4"
+            />
             <h1 className="font-medium text-l mb-2 text-primary transition-all duration-200 text-right cursor-pointer flex items-center justify-end gap-1">
               Visa alla
               <MdOutlineKeyboardArrowRight size={28} className={`transform`} />
             </h1>
           </div>
         </ScrollReveal>
-        <ScrollReveal>
-          <button className="btn bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none font-medium text-xs pt-0 pb-0 btn-height-rem">
+        <ScrollReveal className="mb-4">
+          <button className="btn hover:bg-base-200 bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none font-medium text-sm pt-0 pb-0 btn-height-rem">
             Alla
           </button>
-          <button className="btn btn-primary w-full lg:w-fit mb-8 ml-2 mr-2 text-xs font-medium pt-0 pb-0 btn-height-rem">
+          <button className="btn btn-primary w-full lg:w-fit mb-8 ml-2 mr-2 text-sm font-medium pt-0 pb-0 btn-height-rem">
             Pågående
           </button>
-          <button className="btn bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none text-xs font-medium pt-0 pb-0 btn-height-rem">
+          <button className="btn bg-base-200 hover:bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none text-sm font-medium pt-0 pb-0 btn-height-rem">
             Avslutad
           </button>
         </ScrollReveal>
@@ -62,7 +66,7 @@ export default function Dashboard({}: Props) {
               <div className="w-full">
                 <ProgressBarComponent progress={80} />
               </div>
-              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+              <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200">
                 Checkified - Nyckeln till Framgång
               </h1>
             </div>
@@ -81,7 +85,7 @@ export default function Dashboard({}: Props) {
               <div className="w-full">
                 <ProgressBarComponent progress={80} />
               </div>
-              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200 ">
+              <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200 ">
                 Checkified - Nyckeln till Framgång
               </h1>
             </div>
@@ -99,7 +103,7 @@ export default function Dashboard({}: Props) {
               <div className="w-full">
                 <ProgressBarComponent progress={80} />
               </div>
-              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+              <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200">
                 Checkified - Nyckeln till Framgång
               </h1>
             </div>
@@ -117,7 +121,7 @@ export default function Dashboard({}: Props) {
               <div className="w-full">
                 <ProgressBarComponent progress={80} />
               </div>
-              <h1 className="font-semibold text-lg mb-2 hover:text-primary hover:underline transition-all duration-200">
+              <h1 className="font-semibold text-sm mb-2 hover:text-primary hover:underline transition-all duration-200">
                 Checkified - Nyckeln till Framgång
               </h1>
             </div>
