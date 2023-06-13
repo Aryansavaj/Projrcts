@@ -88,7 +88,7 @@ export default function Profilesetting({}: Props) {
                       <div>
                         <button
                           type="button"
-                          className="btn mr-2 h-10 w-full btn-primary  hover:bg-gray-100 hover:border-gray-200 items-center isolate"
+                          className="btn mr-2  w-full btn-primary items-center py-1"
                         >
                           <div className="flex justify-center items-center w-full">
                             <div className="mr-1 text-white font-semibold font-sans relative xs:text-sm">
