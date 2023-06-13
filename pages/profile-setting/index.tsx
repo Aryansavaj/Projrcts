@@ -34,7 +34,7 @@ export default function Profilesetting({}: Props) {
           </Link>
           <Link  href="/profile-setting-payment">
           <div className="flex items-center gap-2 text-1xl font-semibold text_12_color">
-            <div className="bg-primary text_12_color rounded-full  text-3xl px-2 py-2 font-bold w-[50px] text-center page_title-font-size">
+            <div className="bg-base-200 text_12_color rounded-full  text-3xl px-2 py-2 font-bold w-[50px] text-center page_title-font-size">
               2
             </div>
             Betalning
