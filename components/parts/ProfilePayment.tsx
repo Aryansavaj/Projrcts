@@ -122,7 +122,7 @@ export default function ProfilePayment({ profilepayData }: Props) {
         </div>
        
       </div>
-      <button type="submit" className="btn btn-primary mt-8 w-full shadow-btn">
+      <button type="submit" className="btn btn-primary mt-8 w-full shadow-btn btn_pro_payment">
         {profilepayData.button}
       </button>
     </form>
