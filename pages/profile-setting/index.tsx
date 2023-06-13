@@ -49,7 +49,7 @@ export default function Profilesetting({}: Props) {
             <Title
               blackText="Personliga"
               blueText="Uppgifter"
-              className="mx-auto text-lg"
+              className="mx-auto title-font-size"
             />
           </ScrollReveal>
           <ProfileForm profileData={profiledata.profileForm} />
