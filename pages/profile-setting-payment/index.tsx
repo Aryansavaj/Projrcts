@@ -60,6 +60,7 @@ export default function Profilepayment({}: Props) {
           <ProfilePayForm profilepayData={profilepaymentdata.profilePayment} />
         </div>
 
+
         <div className="p-8 lg:p-8 bg-primary rounded-[3rem] gap-8">
           <ScrollReveal>
             <Title
