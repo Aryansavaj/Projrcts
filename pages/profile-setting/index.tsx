@@ -44,7 +44,7 @@ export default function Profilesetting({}: Props) {
       </section>
 
       <section className="grid grid-cols-3 gap-6">
-        <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem] gap-8 col-span-2">
+        <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem] gap-8 col-span-2 h-2/3">
           <ScrollReveal>
             <Title
               blackText="Personliga"
