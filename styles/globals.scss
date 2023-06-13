@@ -760,3 +760,58 @@
 .hr-height {
   border-top-width: 2px !important;
 }
+
+.hr-height{
+  border-top-width: 2px !important; 
+}
+.height-fullscreen {
+  height: 126vh;
+}
+.title-font-size{
+  font-size: 1.125rem !important;
+  margin-bottom: 1rem !important;
+}
+.pro_setting_side_font{
+  font-size: 0.625rem;
+}
+.profile_grid_set{
+  grid-template-columns: repeat(14, minmax(0, 1fr)) !important;
+}
+.profile_grid_inner_set_1{
+  grid-column: span 9 / span 9 !important;
+}
+.profile_grid_inner_set_2{
+  grid-column: span 5 / span 5;
+}
+.pro_pri_btn{
+  height: unset !important;
+  min-height: unset !important;
+}
+.page_title-font-size{
+  font-size: 1.125rem !important;
+}
+.buttton_img_pro_setting{
+  padding: 0.1rem !important;
+}
+.text_12_color{
+  color: #AFBAD2;
+}
+.bg_color_dash{
+  background-color: #E1ECFB !important;
+}
+.absolute_obje_position{
+  top: 56%;
+  right: -12%;
+}
+.absolute_obje_position2{
+  top: -31%;
+  left: -8%;
+}
+.colunm_row_gap_form{
+  column-gap: 2.5rem !important;
+  row-gap: 0.7rem !important;
+}
+.input{
+  height: 3.5rem !important;
+}
+

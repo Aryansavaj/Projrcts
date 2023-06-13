@@ -30,16 +30,16 @@ export default function Profilepayment({}: Props) {
       <section className="mb-8 lg:mb-8">
         <div className="px-4 py-10 bg-base-100 rounded-[3rem] h-14 flex items-center gap-6 text-sm w-[350px]">
         <Link  href="/profile-setting">
-          <div className="flex items-center gap-2 text-1xl font-bold">
-            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
+          <div className="flex items-center gap-2 text-1xl font-semibold text_12_color">
+            <div className="bg-base-200 text_12_color rounded-full  text-3xl px-2 py-2 font-bold w-[50px] text-center page_title-font-size">
               1
             </div>
             Information
           </div>
           </Link>
           <Link  href="/profile-setting-payment">
-          <div className="flex items-center gap-2 text-1xl">
-            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
+          <div className="flex items-center gap-2 text-1xl font-semibold ">
+            <div className="bg-primary text-white rounded-full  text-3xl px-2 py-2 font-bold w-[50px] text-center page_title-font-size">
               2
             </div>
             Betalning
