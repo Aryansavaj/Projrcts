@@ -43,8 +43,8 @@ export default function Profilesetting({}: Props) {
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-6">
-        <div className="p-8 lg:p-8 bg-base-100 rounded-[28px] gap-8 col-span-2 h-2/3">
+      <section className="grid grid-cols-3 gap-6 profile_grid_set">
+        <div className="p-8 lg:p-8 bg-base-100 rounded-[28px] gap-8 col-span-2 h-2/3 profile_grid_inner_set_1">
           <ScrollReveal>
             <Title
               blackText="Personliga"
@@ -55,7 +55,7 @@ export default function Profilesetting({}: Props) {
           <ProfileForm profileData={profiledata.profileForm} />
         </div>
 
-        <div className="p-8 lg:p-8 bg-primary rounded-[28px] gap-8">
+        <div className="p-8 lg:p-8 bg-primary rounded-[28px] gap-8 profile_grid_inner_set_2">
           <ScrollReveal>
             <Title
               blackText={"Din Kundvagn"}
