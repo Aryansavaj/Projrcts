@@ -48,8 +48,8 @@ export default function Profilepayment({}: Props) {
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-6">
-        <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem] gap-8 col-span-2">
+      <section className="grid grid-cols-3 gap-6 profile_grid_set">
+        <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem] gap-8 col-span-2 profile_grid_inner_set_1">
           <ScrollReveal>
             <Title
               blackText=""
@@ -61,7 +61,7 @@ export default function Profilepayment({}: Props) {
         </div>
 
 
-        <div className="p-8 lg:p-8 bg-primary rounded-[3rem] gap-8">
+        <div className="p-8 lg:p-8 bg-primary rounded-[3rem] gap-8 profile_grid_inner_set_2">
           <ScrollReveal>
             <Title
               blackText={"Din Kundvagn"}
