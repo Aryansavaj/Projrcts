@@ -125,7 +125,7 @@ export default function Profilesetting({}: Props) {
                 </div>
               </div>
 
-              <div className="bg-glass-border p-3 rounded-2xl">
+              <div className="bg-glass-border p-2 rounded-2xl">
               <div
                   key=""
                   className="flex justify-between items-center py-2 px-2 rounded-2xl"
