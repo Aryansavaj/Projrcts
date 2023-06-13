@@ -91,7 +91,7 @@ export default function Profilesetting({}: Props) {
                           className="btn mr-2  w-full btn-primary items-center py-1"
                         >
                           <div className="flex justify-center items-center w-full">
-                            <div className="mr-1 text-white font-semibold font-sans relative xs:text-sm">
+                            <div className="mr-1 text-white font-semibold font-sans relative text-[12px]">
                               Premium
                             </div>
                             <Image
