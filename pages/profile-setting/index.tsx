@@ -99,6 +99,16 @@ export default function Profilesetting({}: Props) {
                             </linearGradient>
                             </defs>
                           </svg>
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute absolute_obje_position2">
+                                <ellipse cx="15.6013" cy="15.5309" rx="15.6013" ry="15.5309" fill="url(#paint0_linear_2_3)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_2_3" x1="18.2435" y1="45.5719" x2="18.2435" y2="7.36134" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white"/>
+                                <stop offset="0.935323" stop-color="white" stop-opacity="0"/>
+                                </linearGradient>
+                                </defs>
+                          </svg>
+
 
                           <div className="flex justify-center items-center w-full">
                             <div className="mr-1 text-white font-semibold font-sans relative text-[12px]">
