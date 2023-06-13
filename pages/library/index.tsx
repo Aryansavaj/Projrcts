@@ -38,7 +38,7 @@ export default function Dashboard({}: Props) {
             </h1>
           </div>
         </ScrollReveal>
-        <ScrollReveal className="mb-2">
+        <ScrollReveal className="">
           <button className="btn hover:bg-base-200 bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none font-medium text-sm pt-0 pb-0 btn-height-rem">
             Alla
           </button>
