@@ -82,7 +82,7 @@ export default function Profilesetting({}: Props) {
 
                       <div className="menu-content">
                         <h2 className="font-semibold text-left text-[14px]">Checkified</h2>
-                        <h3 className="font-semibold text-left text-[14px]">14 997 :-</h3>
+                        <h3 className="font-semibold text-left text-[11px]">14 997 :-</h3>
                       </div>
 
                       <div>
