@@ -74,8 +74,8 @@ export default function Profilesetting({}: Props) {
                           src="/icons/pricing/2-premium.png"
                           alt="Mega menu icon"
                           className="object-contain"
-                          width={40}
-                          height={40}
+                          width={55}
+                          height={55}
                           priority
                         />
                       </div>
