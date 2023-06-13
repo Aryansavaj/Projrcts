@@ -126,7 +126,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
             <li className="absolute left-[-26rem] top-[-1.5rem]">
               <label className="btn btn-link bg-base-100 h-14">
                 <div className="flex items-center justify-start gap-2">
-                  <h2 className="font-extrabold text-primary text-26-xl font-mont">
+                  <h2 className="font-extrabold text-primary text-26-xl font-extrabold-mont">
                     Översikt
                   </h2>
                 </div>
