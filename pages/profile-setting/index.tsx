@@ -112,7 +112,7 @@ export default function Profilesetting({}: Props) {
 
               <div className="bg-glass rounded-2xl">
                 <div key="" className="py-2 px-4">
-                  <div className=" flex relative">
+                  <div className=" flex relative justify-between">
                     <input
                       type="text"
                       placeholder="Rabattkod"
