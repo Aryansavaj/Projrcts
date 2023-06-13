@@ -96,7 +96,7 @@ export default function Profilesetting({}: Props) {
                             </div>
                             <Image
                               src="/icons/profile-setting/chargeicon-1.png"
-                              className="relative border p-1 border-white rounded-full"
+                              className="relative border buttton_img_pro_setting border-white rounded-full"
                               width="32"
                               height="32"
                               alt="Facebook"
