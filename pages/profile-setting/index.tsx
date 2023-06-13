@@ -26,7 +26,7 @@ export default function Profilesetting({}: Props) {
         <div className="px-4 py-10 bg-base-100 rounded-[3rem] h-14 flex items-center gap-6 text-sm w-[350px]">
         <Link  href="/profile-setting">
           <div className="flex items-center gap-2 text-1xl font-bold">
-            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
+            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center title-font-size">
               1
             </div>
             Information
@@ -34,7 +34,7 @@ export default function Profilesetting({}: Props) {
           </Link>
           <Link  href="/profile-setting-payment">
           <div className="flex items-center gap-2 text-1xl">
-            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center">
+            <div className="bg-primary text-white rounded-full btn-shadow text-3xl px-2 py-2 font-bold w-[50px] text-center title-font-size">
               2
             </div>
             Betalning
