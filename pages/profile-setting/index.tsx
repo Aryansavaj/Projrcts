@@ -60,7 +60,7 @@ export default function Profilesetting({}: Props) {
             <Title
               blackText={"Din Kundvagn"}
               blueText=""
-              className="text-left text-26 text-white"
+              className="text-left text-26 text-white title-font-size"
             />
           </ScrollReveal>
           <section className="relative mb-28">
