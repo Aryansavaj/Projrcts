@@ -35,7 +35,7 @@ export default function Profile_setting_pop({}: Props) {
     <Admin_layout headTitle={profile_pop.metaData.title}>
       <section className="">
         <div className="bg-base-100 gap-8 col-span-3">
-            <div className="p-8 bg-primary flex flex-col gap-8">
+            <div className="p-8 bg-primary flex flex-col admin2_banner">
                 <h1 class="text-4xl text-white font-semibold Admin2_title">Manage Your Course</h1>
                 <div className="admin2_nav_button">
                     <button className="btn  w-full lg:w-fit mb-8 text-white border-none font-medium text-sm pt-0 pb-0 btn-height-rem admin2_btn">
