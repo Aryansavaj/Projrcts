@@ -101,13 +101,8 @@ export default function Admin_sidebar({ openSidebar, setOpenSidebar }: Props) {
 
   return (
     <>
-      <span
-        className="absolute text-white text-4xl top-5 left-4 cursor-pointer"
-        onClick="openSidebar()"
-      >
-        <i className="bi bi-filter-left px-2 bg-gray-900 rounded-md" />
-      </span>
-      <div className="sidebar top-20 bottom-0 lg:left-0 pt-12  overflow-y-auto text-center bg-base-100 pl-8 flex flex-col justify-between w-[270px]">
+      
+      <div className="sidebar top-20 bottom-0 lg:left-0 pt-12  overflow-y-auto text-center bg-base-100 pl-8 flex flex-col justify-between w-[270px] h-full">
         <div className="sidebar_menu">
           <div
             className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-subtitle side_hover"
