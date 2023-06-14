@@ -14,7 +14,6 @@ import sv from "@/locales/sv";
 
 type Props = {};
 
-
 export default function Dashboard({}: Props) {
   const router = useRouter();
   const { locale } = router;
@@ -23,20 +22,20 @@ export default function Dashboard({}: Props) {
   return (
     <Layout headTitle={t.pressData.metaData.title}>
       <section className="grid auto-rows-max grid-flow-col gap-6">
-        <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem] gap-8 row-end-3 row-span-2">
+        <div className="p-8 lg:p-8 bg-base-100 rounded-[28px] gap-8 row-end-3 row-span-2">
           <ScrollReveal>
             <div className="place-content-between flex items-baseline">
               <Titlespan
                 blackText="Checkified - Nyckeln till Framgång"
                 blueText=""
-                className="text-left mb-4 text-xl font-bold"
+                className="text-left mb-4 text-xl font-extrabold"
               />
             </div>
           </ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-10">
             <ScrollReveal className="bg-white grid justify-between cursor-pointer transition-all duration-150">
               <div>
-                <div className="w-full h-[400px] relative rounded-lg overflow-hidden mb-6 shadow-lg">
+                <div className="w-full h-[400px] relative rounded-[20px] overflow-hidden mb-6 shadow-lg">
                   <Image
                     src="/images/course-detail/video-bg.png"
                     fill
@@ -47,16 +46,16 @@ export default function Dashboard({}: Props) {
                     <Image
                       src="/images/course-detail/play-circle.png"
                       alt="blog"
-                      width={100}
-                      height={100}
+                      width={110}
+                      height={110}
                       className="object-contain"
                     />
                   </div>
                 </div>
-                <h1 className="font-semibold text-xl mb-2 hover:text-primary hover:underline transition-all duration-200">
+                <h1 className="font-semibold text-lg mb-3 transition-all duration-200 text-151E3A">
                   Mindset
                 </h1>
-                <p className="text-subtitle mb-3 text-sm font-medium">
+                <p className="text-subtitle mb-3 text-sm font-medium text-707BA0">
                   Du kommer att lära dig varför rätt tänkesätt är avgörande för
                   framgång i dropshippingbranschen. Utveckla ett tillväxttänk
                   som kan hjälpa dig att övervinna utmaningar, lära av
@@ -70,7 +69,7 @@ export default function Dashboard({}: Props) {
           </div>
         </div>
 
-        <div className="p-8 lg:p-8 bg-base-100 rounded-[3rem]">
+        <div className="p-8 lg:p-8 bg-base-100 rounded-[28px]">
           <ScrollReveal className="flex justify-center">
             <Titlespan
               blackText="Modulöversikt"
@@ -78,8 +77,8 @@ export default function Dashboard({}: Props) {
               className="text-center text-xl font-bold "
             />
           </ScrollReveal>
-          <section className="my-6">
-            <div className="grid grid-cols-1 gap-6">
+          <section className="mt-6 mb-2">
+            <div className="grid grid-cols-1 gap-4">
               <ScrollReveal
                 key=""
                 className="flex justify-between items-center bg-play-tab py-4 px-4 rounded-2xl"
@@ -98,7 +97,9 @@ export default function Dashboard({}: Props) {
                     </div>
 
                     <div className="menu-content">
-                      <h2 className="font-semibold text-left">Introduktion</h2>
+                      <h2 className="font-semibold text-left text-sm text-151E3A">
+                        Introduktion
+                      </h2>
                     </div>
                   </div>
                 </Link>
@@ -109,7 +110,7 @@ export default function Dashboard({}: Props) {
               >
                 <Link key="" href="">
                   <div className="mega-menu-list items-center flex gap-3 items-start rounded-lg">
-                    <div className="list-icon bg-base-100 rounded-full play-video-sm">
+                    <div className="list-icon bg-base-08 rounded-full play-video-sm">
                       <Image
                         src="/icons/course-detail/pause-svg.svg"
                         alt="Mega menu icon"
@@ -121,7 +122,7 @@ export default function Dashboard({}: Props) {
                     </div>
 
                     <div className="menu-content">
-                      <h2 className="font-semibold text-left text-white">
+                      <h2 className="font-medium text-left text-white text-sm">
                         Mindset
                       </h2>
                     </div>
@@ -146,7 +147,9 @@ export default function Dashboard({}: Props) {
                     </div>
 
                     <div className="menu-content">
-                      <h2 className="font-semibold text-left">Affärsmodell</h2>
+                      <h2 className="font-semibold text-left text-sm text-151E3A">
+                        Affärsmodell
+                      </h2>
                     </div>
                   </div>
                 </Link>
@@ -169,7 +172,7 @@ export default function Dashboard({}: Props) {
                     </div>
 
                     <div className="menu-content">
-                      <h2 className="font-semibold text-left">
+                      <h2 className="font-semibold text-left text-sm text-151E3A">
                         Avslöjar Vinnande Produkt
                       </h2>
                     </div>
