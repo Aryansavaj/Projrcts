@@ -152,7 +152,7 @@ export default function Profilesetting({}: Props) {
                 >
                   
                     <div className="list-icon rounded-lg bg-transparent">
-                      <h2 className="font-semibold text-white pro_setting_side_font">Moms</h2>
+                      <h2 className="font-semibold text-white pro_setting_side_font">Pris inkl. moms</h2>
                     </div>
 
                     <div>
