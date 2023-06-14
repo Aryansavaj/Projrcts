@@ -11,6 +11,7 @@ import ScrollReveal from "@/components/transition/ScrollReveal";
 import ProfileForm from "@/components/parts/profile_form";
 import Popupform from "@/components/parts/popup_form";
 import Popup from "@/components/parts/popup";
+import AdminList from "@/components/parts/Admin_list"
 // import en from "@/locales/en";
 // import sv from "@/locales/sv";
 import { profile_pop } from "@/locales/sv/profile_setting_pop";
@@ -31,6 +32,12 @@ export default function Profile_setting_pop({}: Props) {
   const handleClosePopup = () => {
     setIsOpen(false);
   };
+
+  const adminItems = [
+    { title: 'Item 1', count: 5, date: '2023-06-01', imageUrl: 'https://example.com/image1.jpg' },
+    { title: 'Item 2', count: 10, date: '2023-06-02', imageUrl: 'https://example.com/image2.jpg' },
+    { title: 'Item 3', count: 7, date: '2023-06-03', imageUrl: 'https://example.com/image3.jpg' },
+  ];
   return (
     <Admin_layout headTitle={profile_pop.metaData.title}>
       <section className="">
@@ -140,6 +147,17 @@ export default function Profile_setting_pop({}: Props) {
                     </div>
                   </div>
                 </div>
+                <div>
+      {adminItems.map((item, index) => (
+        <AdminList
+          key={index}
+          title={item.title}
+          count={item.count}
+          date={item.date}
+          imageUrl={item.imageUrl}
+        />
+      ))}
+    </div>
               </div>
             </div>
         </div>
