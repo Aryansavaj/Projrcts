@@ -20,7 +20,7 @@ export default function Admin_layout({ headTitle, isFullWidth, children }: Props
       <div data-theme="light" className="overflow-hidden relative">
         <Admin_header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         <main className="pt-header-height bg-base-100">
-            <div className="bg-primary">
+            <div className="bg-primary flex flex-col lg:flex-row gap-8">
                 <h1 class="Admin2_title">Manage Your Course</h1>
                 <div className="admin2_nav_button">
                     <button className="btn hover:bg-base-200 bg-white opacity-[.14] w-full lg:w-fit mb-8 text-subtitle border-none font-medium text-sm pt-0 pb-0 btn-height-rem">
