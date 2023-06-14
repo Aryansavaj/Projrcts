@@ -49,8 +49,10 @@ export default function Profile_setting_pop({}: Props) {
                     </button>
                 </div>
             </div>
-            <div className="p-8 lg:p-8 bg-base-100 rounded-[24px] gap-8 row-end-3 row-span-2">
-              <h1>sefish</h1>
+            <div className="p-8">
+              <div className="p-8 bg-base-100 rounded-[24px]">
+                <h1>sefish</h1>
+              </div>
             </div>
         </div>
       </section>
