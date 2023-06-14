@@ -38,14 +38,14 @@ export default function Profile_setting_pop({}: Props) {
             <div className="p-8 bg-primary flex flex-col gap-8">
                 <h1 class="text-4xl text-white font-semibold Admin2_title">Manage Your Course</h1>
                 <div className="admin2_nav_button">
-                    <button className="btn hover:bg-base-200 bg-white opacity-[.14] w-full lg:w-fit mb-8 text-subtitle border-none font-medium text-sm pt-0 pb-0 btn-height-rem">
-                        Alla
+                    <button className="btn  w-full lg:w-fit mb-8 text-subtitle border-none font-medium text-sm pt-0 pb-0 btn-height-rem admin2_btn">
+                    Active
                     </button>
                     <button className="btn btn-primary w-full lg:w-fit mb-8 ml-2 mr-2 text-sm font-medium pt-0 pb-0 btn-height-rem">
-                        Pågående
+                    Draft
                     </button>
                     <button className="btn bg-base-200 hover:bg-base-200 w-full lg:w-fit mb-8 text-subtitle border-none text-sm font-medium pt-0 pb-0 btn-height-rem">
-                        Avslutad
+                    Paused
                     </button>
                 </div>
             </div>
