@@ -34,7 +34,7 @@ export default function Admin_layout({ headTitle, isFullWidth, children }: Props
                     </button>
                 </div>
             </div>
-          <div className="p-8 lg:p-12 bg-base-200 flex flex-col lg:flex-row gap-8 height-fullscreen bg_color_dash">
+          <div className="gap-8 bg-base-200 flex flex-col lg:flex-row height-fullscreen bg_color_dash">
             <div className="w-full lg:w-1/6 relative h-[360px]">
               <Admin_sidebar
                 setOpenSidebar={setOpenSidebar}
@@ -43,10 +43,7 @@ export default function Admin_layout({ headTitle, isFullWidth, children }: Props
             </div>
 
             <div
-              className={`${
-                isFullWidth ? "" : "container"
-              } mx-auto isolate w-full lg:w-6/6`}
-            >
+              className=" mx-auto isolate w-full lg:w-6/6">
               {children}
             </div>
           </div>
