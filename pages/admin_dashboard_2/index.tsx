@@ -58,10 +58,10 @@ export default function Profile_setting_pop({}: Props) {
             </div>
             <div className="p-8">
               <div className="p-8 bg-base-100 rounded-[24px]">
-                <div className="admin2_content_header flex justify-between item-center">
+                <div className="admin2_content_header flex justify-between items-center">
                   <div className="admin2_content_title"><h2><span>150 </span>Active Courses</h2></div>
                   <div className="admin2_content_nav">
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 justify-between items-center">
                       <h3>View by</h3>
                       <div className="form_benner_icon grid grid-cols-2 place-content-center rounded-lg w-fit mx-auto">
                           <div className="form_inner_icon_1 bg-primary rounded-lg py-2 px-3">
@@ -147,17 +147,17 @@ export default function Profile_setting_pop({}: Props) {
                     </div>
                   </div>
                 </div>
-                <div>
-      {adminItems.map((item, index) => (
-        <AdminList
-          key={index}
-          title={item.title}
-          count={item.count}
-          date={item.date}
-          imageUrl={item.imageUrl}
-        />
-      ))}
-    </div>
+                <div className="">
+                  {adminItems.map((item, index) => (
+                    <AdminList
+                      key={index}
+                      title={item.title}
+                      count={item.count}
+                      date={item.date}
+                      imageUrl={item.imageUrl}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
         </div>
