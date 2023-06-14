@@ -33,7 +33,7 @@ export default function Profile_setting_pop({}: Props) {
   };
   return (
     <Admin_layout headTitle={profile_pop.metaData.title}>
-      <section className="grid grid-cols-4">
+      <section className="">
         <div className="pt-8 pl-8 pr-8 pb-0 bg-base-100 rounded-[3rem] gap-8 col-span-3">
           <section className=" bg-primary rounded-[2rem] text-white relative mb-5 isolate">
             <div className="w-full  p-7 rounded-tl-3xl rounded-bl-3xl lg:mr-auto mt-40 lg:mt-0">
