@@ -1,12 +1,10 @@
 import { MetaData } from "./meta"
 
 type ProfilePayment = {
-  firstName: string
-  lastName: string
-  streetaddress: string
-  zipcodeNumber:string
-  city:string
-  country:string
+  namecard: string
+  cardNumber: string
+  validitydate: string
+  cvc:string
   button: string
 }
 
