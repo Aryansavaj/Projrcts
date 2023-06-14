@@ -99,7 +99,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
 
   return (
     <header className="bg-base-100 h-header-height fixed top-0 left-0 right-0 z-20 flex justify-between items-center">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="mx-8 flex justify-between items-center w-full">
         <Link className="" href="/">
           <div className="flex items-center justify-start gap-2">
             <Image
