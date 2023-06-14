@@ -238,7 +238,7 @@ export default function Header({ openSidebar, setOpenSidebar }: Props) {
               fill
               className="object-contain side_header_img"
             />
-            <p className="text-lg leading-6 font-bold text-center text-white mb-0 mt-2 tracking-wide">
+            <p className="text-lg leading-5 font-bold text-center text-white mb-0 mt-2 tracking-wide">
               Checkified
               <br />
               University
