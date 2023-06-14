@@ -34,8 +34,8 @@ export default function Admin_layout({ headTitle, isFullWidth, children }: Props
                     </button>
                 </div>
             </div>
-          <div className="gap-8 bg-base-200 flex flex-col lg:flex-row height-fullscreen bg_color_dash">
-            <div className="w-full lg:w-1/6 relative h-[360px]">
+          <div className="bg-base-200 flex height-fullscreen bg_color_dash">
+            <div className="w-fit relative h-full">
               <Admin_sidebar
                 setOpenSidebar={setOpenSidebar}
                 openSidebar={openSidebar}
