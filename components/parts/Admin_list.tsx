@@ -19,7 +19,7 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
           </div>
           <div className="admin_list_detail flex flex-col gap-2">
             <h4 className="text-base form-text-color font-semibold">{title}</h4>
-            <div className="admin_list_extra flex gap-4 items-center">
+            <div className="admin_list_extra flex gap-2 items-center">
               <div className="admin_list_count font-medium text-[10px] text-707BA0 flex items-center bg-EDF5FE rounded-xl">
               <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.10666 8.03768C8.03999 8.03102 7.95999 8.03102 7.88666 8.03768C6.29999 7.98435 5.03999 6.68435 5.03999 5.08435C5.03999 3.45102 6.35999 2.12435 7.99999 2.12435C9.63333 2.12435 10.96 3.45102 10.96 5.08435C10.9533 6.68435 9.69333 7.98435 8.10666 8.03768Z" stroke="#707BA0" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
