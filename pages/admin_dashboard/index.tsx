@@ -161,7 +161,7 @@ export default function Profile_setting_pop({}: Props) {
                     </p>
                   </ScrollReveal>
                 </div>
-                <div>
+                {/* <div>
                   <div className="bg-EDF5FE rounded-[25px]">
                     <div className="border-dashed border-[1.5px] rounded-[25px]">
                       <div className="flex flex-col gap-8">
@@ -180,7 +180,7 @@ export default function Profile_setting_pop({}: Props) {
                         </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </section>
 
               <div className="w-full">
