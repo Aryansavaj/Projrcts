@@ -16,7 +16,7 @@ import AdminList from "@/components/parts/Admin_list"
 // import sv from "@/locales/sv";
 import { profile_pop } from "@/locales/sv/profile_setting_pop";
 import { Popup_form } from "@/locales/sv/popup_form";
-
+import { AiOutlinePlus } from "react-icons/ai";
 type Props = {};
 
 export default function Profile_setting_pop({}: Props) {
@@ -65,84 +65,26 @@ export default function Profile_setting_pop({}: Props) {
                       <h3 className="text-sm text-707BA0 font-medium">View by</h3>
                       <div className="form_benner_icon grid grid-cols-2 place-content-center rounded-lg w-fit mx-auto">
                           <div className="form_inner_icon_1 bg-primary rounded-lg py-2 px-3">
-                            <svg
-                              width="21"
-                              height="21"
-                              viewBox="0 0 19 19"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M7.12498 17.4172H11.875C15.8333 17.4172 17.4166 15.8338 17.4166 11.8755V7.1255C17.4166 3.16717 15.8333 1.58383 11.875 1.58383H7.12498C3.16665 1.58383 1.58331 3.16717 1.58331 7.1255V11.8755C1.58331 15.8338 3.16665 17.4172 7.12498 17.4172Z"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M7.12502 7.91716C7.99947 7.91716 8.70835 7.20827 8.70835 6.33382C8.70835 5.45937 7.99947 4.75049 7.12502 4.75049C6.25057 4.75049 5.54169 5.45937 5.54169 6.33382C5.54169 7.20827 6.25057 7.91716 7.12502 7.91716Z"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M2.11371 15.0026L6.01662 12.3822C6.64204 11.9626 7.54454 12.0101 8.10662 12.493L8.36787 12.7226C8.98537 13.253 9.98288 13.253 10.6004 12.7226L13.8937 9.89638C14.5112 9.36596 15.5087 9.36596 16.1262 9.89638L17.4166 11.0047"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.74 17.791L13.94 17.791" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 12.791L15.68 12.791" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.74 7.79102L13.94 7.79102" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 15.791L22 9.79101C22 4.79101 20 2.79101 15 2.79102L9 2.79102C4 2.79102 2 4.79102 2 9.79102L2 15.791C2 20.791 4 22.791 9 22.791L15 22.791C20 22.791 22 20.791 22 15.791Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                           </div>
                           <div className="form_inner_icon_2 py-2 px-3">
-                            <svg
-                              width="21"
-                              height="21"
-                              viewBox="0 0 19 19"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M16.6251 4.7343C13.9889 4.47305 11.3368 4.33847 8.69262 4.33847C7.12512 4.33847 5.55762 4.41764 3.99012 4.57597L2.37512 4.7343"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M6.72919 3.93453L6.90335 2.89745C7.03002 2.14537 7.12502 1.58328 8.46294 1.58328H10.5371C11.875 1.58328 11.9779 2.17703 12.0967 2.90537L12.2709 3.93453"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M14.923 7.23575L14.4085 15.2078C14.3214 16.4507 14.2501 17.4166 12.0414 17.4166H6.95888C4.75013 17.4166 4.67888 16.4507 4.59179 15.2078L4.07721 7.23575"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M8.17804 13.0627H10.8143"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M7.52063 9.89575H11.479"
-                                stroke="white"
-                                stroke-width="1.17003"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 22.791H15C20 22.791 22 20.791 22 15.791V9.79102C22 4.79102 20 2.79102 15 2.79102H9C4 2.79102 2 4.79102 2 9.79102V15.791C2 20.791 4 22.791 9 22.791Z" stroke="#AFBAD2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 17.791H14C15.65 17.791 17 16.441 17 14.791V10.791C17 9.14102 15.65 7.79102 14 7.79102H10C8.35 7.79102 7 9.14102 7 10.791V14.791C7 16.441 8.35 17.791 10 17.791Z" stroke="#AFBAD2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 7.79102V17.791" stroke="#AFBAD2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 12.791H17" stroke="#AFBAD2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                           </div>
                       </div>
-                      <div className="admin2_add_btn text-sm font-semibold text-white">
-                        Add Course
+                      <div className="admin2_add_btn text-sm font-semibold text-white bg-0083FF">
+                      <AiOutlinePlus/> Add Course
                       </div>
                     </div>
                   </div>
