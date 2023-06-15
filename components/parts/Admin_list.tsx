@@ -50,7 +50,7 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
             <BsThreeDotsVertical/>
           </div>
           {menuOpen && (
-        <div className="menu-options absolute right-100">
+        <div className="menu-options absolute text-center right-100 p-4">
         {menuOptions.map((option, index) => (
           <div key={`option-${index}`}>{option}</div>
         ))}
