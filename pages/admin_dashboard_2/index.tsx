@@ -84,7 +84,8 @@ export default function Profile_setting_pop({}: Props) {
                           </div>
                       </div>
                       <div className="admin2_add_btn text-sm font-semibold text-white bg-0083FF flex items-center">
-                      <AiOutlinePlus/> Add Course
+                        <button className="btn btn-primary w-full lg:w-fit mb-8 ml-2 mr-2 text-sm font-semibold pt-0 pb-0 btn-height-rem"></button>
+                          <AiOutlinePlus/> Add Course
                       </div>
                     </div>
                   </div>
