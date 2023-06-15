@@ -14,8 +14,8 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
     
       <div className="admin_list flex justify-between items-center bg-white my-4 rounded-[26px] p-3">
         <div className="admin_list_content flex gap-4 items-center">
-          <div className="admin_list_img flex justify-between items-center overflow-hidden rounded-[26px]">
-            <img src={imageUrl} alt="Admin Image" width="65%"/>
+          <div className="admin_list_img overflow-hidden rounded-[26px]">
+            <img src={imageUrl} alt="Admin Image" width="100%"/>
           </div>
           <div className="admin_list_detail">
             <h4>{title}</h4>
