@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsThreeDotsVertical } from "react-icons/bs";
+
 
 interface AdminListProps {
   title: string;
@@ -22,7 +24,7 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
           </div>
         </div>
       </div>
-      <div className="admin_list_menu"></div>
+      <div className="admin_list_menu"><BsThreeDotsVertical/></div>
     </div>
   );
 };
