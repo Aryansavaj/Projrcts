@@ -120,12 +120,12 @@ export default function Profile_setting_pop({}: Props) {
               </div>
 
               <div className="absolute bottom-14 -right-16 bg-glass p-3 rounded-full circle-shadow">
-                <div className="bg-white h-26 flex items-center gap-2 py-6 px-6 rounded-full text-sm">
-                  <div className="bg-primary text-white p-2 rounded-full">
+                <div className="bg-white h-26 flex items-center gap-2 py-6 px-6 rounded-full text-sm p-5">
+                  <div className="bg-primary text-white p-3 rounded-full">
                   <Image
                             src="/images/Adminimg/Group.svg"
-                            width={40}
-                            height={40}
+                            width={50}
+                            height={50}
                             alt="avatar"
                             className="rounded-corner"
                           />
