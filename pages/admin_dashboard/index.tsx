@@ -91,8 +91,8 @@ export default function Profile_setting_pop({}: Props) {
                       <div className="bg-base-100 w-full flex items-center rounded-corner">
                         <div className="search_svg rounded-full flex item-center justify-center ml-2.5">
                           <Image
-                            src="/images/Adminimg/Group.svg"
-                            width={100}
+                            src="/images/Adminimg/search-normal.svg"
+                            width={20}
                             height={20}
                             alt="avatar"
                             className="rounded-corner"
@@ -122,7 +122,13 @@ export default function Profile_setting_pop({}: Props) {
               <div className="absolute bottom-14 -right-16 bg-glass p-3 rounded-full circle-shadow">
                 <div className="bg-white h-26 flex items-center gap-2 py-6 px-6 rounded-full text-sm">
                   <div className="bg-primary text-white p-2 rounded-full">
-                    <FaBook size={40} />
+                  <Image
+                            src="/images/Adminimg/Group.svg"
+                            width={40}
+                            height={40}
+                            alt="avatar"
+                            className="rounded-corner"
+                          />
                   </div>
                 </div>
               </div>
@@ -157,7 +163,7 @@ export default function Profile_setting_pop({}: Props) {
                 </div>
                 <div>
                   <div>
-
+                    
                   </div>
                 </div>
               </section>
