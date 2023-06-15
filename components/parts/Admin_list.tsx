@@ -19,7 +19,7 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
           </div>
           <div className="admin_list_detail">
             <h4>{title}</h4>
-            <div className="admin_list_extra flex justify-between items-center">
+            <div className="admin_list_extra flex gap-4 items-center">
               <div className="admin_list_count">{count}</div>
               <div className="admin_list_date">{date}</div>
             </div>
