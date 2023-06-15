@@ -147,7 +147,7 @@ export default function Admin_Header({ openSidebar, setOpenSidebar }: Props) {
                 <div className="flex items-center justify-start gap-2">
                   <Image
                     className="svg-primary object-contain"
-                    src="/logo.svg"
+                    src="/Rectangle1.png"
                     alt="checkified"
                     height={35}
                     width={35}
