@@ -92,7 +92,7 @@ export default function Profile_setting_pop({}: Props) {
                         <div className="search_svg rounded-full flex item-center justify-center ml-2.5">
                           <Image
                             src="/images/Adminimg/Group.svg"
-                            width={20}
+                            width={100}
                             height={20}
                             alt="avatar"
                             className="rounded-corner"
