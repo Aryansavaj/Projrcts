@@ -93,11 +93,11 @@ export default function Admin_Header({}: Props) {
                 className={`lg:absolute lg:w-[18%] ${
                   openMenu
                     ? "lg:top-[90px] lg:opacity-100"
-                    : "lg:top-[90px] lg:opacity-0"
+                    : "lg:top-[90px] lg:opacity-0 invisible"
                 } lg:transform lg:translate-x-[17rem] lg:left-[61rem] shadow-lg lg:p-7 z-10 flex flex-col lg:flex-row lg:h-auto rounded-[28px] gap-6 bg-base-100 overflow-auto transition-all duration-200 ease-in-out ${
                   openMenu
                     ? "h-[400px] p-8 shadow-none border opacity-100"
-                    : "h-0 p-0 opacity-0"
+                    : "h-0 p-0 opacity-0 invisible"
                 } `}
               >
                 <div className="">
