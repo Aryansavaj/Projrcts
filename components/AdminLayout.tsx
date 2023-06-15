@@ -16,6 +16,7 @@ export default function Admin_layout({ headTitle, children }: Props) {
     <>
       <MetaHead title={headTitle} />
       <div data-theme="light" className="overflow-hidden relative">
+
         <Admin_header />
         <section className="flex flex-row overflow-x-hidden flex-auto">
           <Admin_sidebar />
@@ -23,6 +24,26 @@ export default function Admin_layout({ headTitle, children }: Props) {
             <div className="middle_section">{children}</div>
           </main>
         </section>
+
+        <Admin_header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
+        <main className="pt-header-height bg-base-100">
+            
+          <div className="bg-base-200 flex min-h-screen bg_color_dash">
+            <div className="w-fit relative flex-1">
+              <Admin_sidebar
+                setOpenSidebar={setOpenSidebar}
+                openSidebar={openSidebar}
+              />
+            </div>
+
+           <div
+              className="mx-auto isolate w-full lg:w-6/6  min-h-full"
+            >
+              {children}
+            </div>
+          </div>
+        </main>
+
       </div>
     </>
   );

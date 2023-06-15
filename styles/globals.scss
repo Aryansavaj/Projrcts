@@ -956,3 +956,43 @@ div.vertical-line {
   left: 45px !important;
   top: -86px !important;
 }
+.admin2_content_title span{
+  color: #0083FF !important; 
+}
+.bg-0083FF{
+  background-color: #0083FF !important;
+}
+.admin2_header_icon{
+  margin-right: unset !important;
+}
+.admin2_list_wrap{
+  margin-top: -7.5rem;
+}
+.bg-EDF5FE{
+  background-color: #EDF5FE !important;
+}
+.admin_list_date, .admin_list_count{
+  padding: 4px 11px;
+}
+.menu-options{
+  top: 0%;
+  right: 131%;
+  width: 114px;
+  box-shadow: 0px 18px 35px rgba(13, 32, 74, 0.06);
+border-radius: 8px;
+background-color: #fff
+}
+.menu-options div{
+  border-radius: 6px;
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #707BA0;
+}
+.menu-options div:hover{
+  background-color: #0083FF;
+  box-shadow: 0px 5px 25px rgba(0, 131, 255, 0.16);
+  color: white;
+}

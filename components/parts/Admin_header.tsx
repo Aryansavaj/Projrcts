@@ -73,14 +73,14 @@ export default function Admin_Header({}: Props) {
               >
                 <div className="flex items-center justify-start gap-2">
                   <Image
-                    className="svg-primary object-contain"
-                    src="/logo.svg"
+                    className=" object-contain rounded-full"
+                    src="/Rectangle1.png"
                     alt="checkified"
-                    height={35}
-                    width={35}
+                    height={42}
+                    width={42}
                     priority
                   />
-                  John Smith
+                  Dominic
                   <MdOutlineKeyboardArrowDown
                     size={26}
                     className={`ml-1 transform ${
