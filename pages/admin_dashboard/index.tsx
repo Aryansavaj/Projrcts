@@ -10,11 +10,12 @@ import { FaBook, FaClipboardList } from "react-icons/fa";
 import HalfCircle from "@/components/graphic/HalfCircle";
 import CacingOne from "@/components/graphic/CacingOne";
 import ScrollReveal from "@/components/transition/ScrollReveal";
+import AdminList from "@/components/parts/Admin_list";
+import { AiOutlinePlus } from "react-icons/ai";
 
 // import en from "@/locales/en";
 // import sv from "@/locales/sv";
 import { profile_pop } from "@/locales/sv/profile_setting_pop";
-
 
 type Props = {};
 
@@ -32,28 +33,40 @@ export default function Profile_setting_pop({}: Props) {
 
   const adminItems = [
     {
-      title: "Item 1",
-      count: 5,
-      date: "2023-06-01",
-      imageUrl: "/images/../card-1.png",
+      title: "Checkified - Key To Success",
+      count: 250,
+      date: "Jan 7, 2023",
+      imageUrl: "/images/../card_list4.png",
     },
     {
-      title: "Item 2",
-      count: 10,
-      date: "2023-06-02",
-      imageUrl: "/images/../card-1.png",
+      title: "Checkified - Nyckeln till Framgång",
+      count: 250,
+      date: "Jan 7, 2023",
+      imageUrl: "/images/../card_list4.png",
     },
     {
-      title: "Item 3",
-      count: 7,
-      date: "2023-06-03",
-      imageUrl: "/images/../card-1.png",
+      title: "Checkified - Key To Success",
+      count: 250,
+      date: "Jan 7, 2023",
+      imageUrl: "/images/../card_list4.png",
+    },
+    {
+      title: "Checkified - Nyckeln till Framgång",
+      count: 250,
+      date: "Jan 7, 2023",
+      imageUrl: "/images/../card_list4.png",
+    },
+    {
+      title: "Checkified - Key To Success",
+      count: 250,
+      date: "Jan 7, 2023",
+      imageUrl: "/images/../card_list4.png",
     },
   ];
   return (
     <Admin_layout headTitle={profile_pop.metaData.title}>
-      <section className="admin_section">
-        <div className="flex flex-wrap">
+      <section className="admin_section mb-14">
+        <div className="flex flex-wrap pl-8 pr-8 mt-14">
           <div className="w-full max-w-full flex flex-0">
             <section className="bg-primary rounded-[28px] py-12 lg:py-5 text-white relative mb-10 isolate lg:w-8/12 z-10">
               <div className="w-full lg:w-7/12  p-8 lg:px-8 lg:py-[29px] lg:mr-auto mt-40 lg:mt-0">
@@ -65,11 +78,11 @@ export default function Profile_setting_pop({}: Props) {
                 />
 
                 <ScrollReveal>
-                  <h2 className="text-[35px] lg:text-[35px] mb-4 font-semibold">
+                  <h2 className="text-[35px] lg:text-[35px] mb-2 font-medium">
                     Welcome Dominic 👋
                   </h2>
 
-                  <p className="mb-6 font-medium text-sm">
+                  <p className="mb-8 font-normal text-sm">
                     Checkified University
                   </p>
 
@@ -89,9 +102,9 @@ export default function Profile_setting_pop({}: Props) {
                         <input
                           type="text"
                           placeholder="Try to find..."
-                          className="input bg-base-100 w-[18rem]"
+                          className="input bg-base-100 w-[17.5rem]"
                         />
-                        <button className="btn bg-primary rounded-full text-white border-2 border-white hover:bg-white hover:text-primary hover:border-primary">
+                        <button className="btn hover-none bg-primary rounded-full text-white border-2 border-white px-6">
                           <Image
                             src="/images/Adminimg/arrow-right.svg"
                             width={25}
@@ -124,6 +137,40 @@ export default function Profile_setting_pop({}: Props) {
                 />
               </div>
             </section>
+          </div>
+        </div>
+
+        <div className="pl-8 pr-8">
+          <div className="flex flex-wrap p-8 bg-base-100 rounded-[24px]">
+            <div className="w-full max-w-full flex flex-0">
+              <section className="text-white relative mb-10 isolate lg:w-5/12 z-10">
+                <div className="w-full  lg:mr-auto mt-40 lg:mt-0">
+                  <ScrollReveal>
+                    <h2 className="text-[35px] lg:text-[35px] mb-2 font-semibold text-151E3A">
+                      Latest Course
+                    </h2>
+
+                    <p className="mb-6 font-medium text-sm text-707BA0">
+                      Upload Your Course
+                    </p>
+                  </ScrollReveal>
+                </div>
+              </section>
+
+              <div className="w-full">
+                <div className="bg-base-200 p-1 px-4 rounded-[24px]">
+                  {adminItems.map((item, index) => (
+                    <AdminList
+                      key={index}
+                      title={item.title}
+                      count={item.count}
+                      date={item.date}
+                      imageUrl={item.imageUrl}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
