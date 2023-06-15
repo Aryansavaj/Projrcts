@@ -18,14 +18,6 @@ export default function Admin_layout({ headTitle, children }: Props) {
       <div data-theme="light" className="overflow-hidden relative">
 
         <Admin_header />
-        <section className="flex flex-row overflow-x-hidden flex-auto">
-          <Admin_sidebar />
-          <main className="bg_color_dash main_body w-full relative">
-            <div className="middle_section">{children}</div>
-          </main>
-        </section>
-
-        <Admin_header />
         <main className="pt-header-height bg-base-100">
             
           <div className="bg-base-200 flex min-h-screen bg_color_dash">
