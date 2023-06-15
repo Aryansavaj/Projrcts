@@ -34,9 +34,9 @@ export default function Profile_setting_pop({}: Props) {
   };
 
   const adminItems = [
-    { title: 'Item 1', count: 5, date: '2023-06-01', imageUrl: 'https://example.com/image1.jpg' },
-    { title: 'Item 2', count: 10, date: '2023-06-02', imageUrl: 'https://example.com/image2.jpg' },
-    { title: 'Item 3', count: 7, date: '2023-06-03', imageUrl: 'https://example.com/image3.jpg' },
+    { title: 'Item 1', count: 5, date: '2023-06-01', imageUrl: '/images/../card-1.png' },
+    { title: 'Item 2', count: 10, date: '2023-06-02', imageUrl: '/images/../card-1.png' },
+    { title: 'Item 3', count: 7, date: '2023-06-03', imageUrl: '/images/../card-1.png' },
   ];
   return (
     <Admin_layout headTitle={profile_pop.metaData.title}>
@@ -147,7 +147,7 @@ export default function Profile_setting_pop({}: Props) {
                     </div>
                   </div>
                 </div>
-                <div className="">
+                <div className="bg-base-200 p-1 px-4 rounded-[24px]">
                   {adminItems.map((item, index) => (
                     <AdminList
                       key={index}

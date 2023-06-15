@@ -21,8 +21,8 @@ export default function Admin_layout({ headTitle, isFullWidth, children }: Props
         <Admin_header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         <main className="pt-header-height bg-base-100">
             
-          <div className="bg-base-200 flex height-fullscreen bg_color_dash">
-            <div className="w-fit relative h-full">
+          <div className="bg-base-200 flex min-h-screen bg_color_dash">
+            <div className="w-fit relative flex-1">
               <Admin_sidebar
                 setOpenSidebar={setOpenSidebar}
                 openSidebar={openSidebar}
