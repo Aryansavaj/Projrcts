@@ -10,6 +10,11 @@ interface AdminListProps {
 }
 
 const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     
       <div className="admin_list flex justify-between items-center bg-white my-4 rounded-[26px] p-3">
@@ -40,7 +45,19 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
             </div>
           </div>
         </div>
-        <div className="admin_list_menu rounded-[25px] py-7 px-2"><BsThreeDotsVertical/></div>
+        <div className={`admin_list_menu rounded-[25px] py-7 px-2 ${menuOpen ? 'open' : ''}`}>
+          <div onClick={toggleMenu}>
+            <BsThreeDotsVertical/>
+          </div>
+          {menuOpen && (
+        <div className="menu-options">
+          {/* Place your menu options here */}
+          <div>Option 1</div>
+          <div>Option 2</div>
+          <div>Option 3</div>
+        </div>
+      )}
+        </div>
       </div>
   );
 };
