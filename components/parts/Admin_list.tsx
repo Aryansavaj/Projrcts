@@ -52,9 +52,9 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
           {menuOpen && (
         <div className="menu-options">
           {/* Place your menu options here */}
-          <div>Option 1</div>
-          <div>Option 2</div>
-          <div>Option 3</div>
+          <div key="option1">Option 1</div>
+          <div key="option2">Option 2</div>
+          <div key="option3">Option 3</div>
         </div>
       )}
         </div>
