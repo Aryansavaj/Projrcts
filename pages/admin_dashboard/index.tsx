@@ -15,6 +15,7 @@ import ScrollReveal from "@/components/transition/ScrollReveal";
 // import sv from "@/locales/sv";
 import { profile_pop } from "@/locales/sv/profile_setting_pop";
 
+
 type Props = {};
 
 export default function Profile_setting_pop({}: Props) {
