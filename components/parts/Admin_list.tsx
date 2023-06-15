@@ -11,7 +11,7 @@ interface AdminListProps {
 
 const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuOptions = ["Option 1", "Option 2", "Option 3"];
+  const menuOptions = ["Edit Details", "Preview", "Deleted"];
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
