@@ -63,7 +63,7 @@ export default function Profile_setting_pop({}: Props) {
                   <div className="admin2_content_nav">
                     <div className="flex gap-3 justify-between items-center">
                       <h3 className="text-sm text-707BA0 font-medium">View by</h3>
-                      <div className="form_benner_icon grid grid-cols-2 place-content-center rounded-lg w-fit mx-auto">
+                      <div className="form_benner_icon grid grid-cols-2 place-content-center rounded-lg w-fit mx-auto admin2_header_icon">
                           <div className="form_inner_icon_1 bg-primary rounded-lg py-2 px-3">
                           <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.74 17.791L13.94 17.791" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
