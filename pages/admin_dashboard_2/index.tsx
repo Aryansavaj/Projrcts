@@ -34,9 +34,9 @@ export default function Profile_setting_pop({}: Props) {
   };
 
   const adminItems = [
-    { Courses_count: 'Item 1', count: 5, date: '2023-06-01', imageUrl: '/images/../card-1.png' },
-    { Courses_count: 'Item 2', count: 10, date: '2023-06-02', imageUrl: '/images/../card-1.png' },
-    { Courses_count: 'Item 3', count: 7, date: '2023-06-03', imageUrl: '/images/../card-1.png' },
+    { title: 'Item 1', count: 5, date: '2023-06-01', imageUrl: '/images/../card-1.png' },
+    { title: 'Item 2', count: 10, date: '2023-06-02', imageUrl: '/images/../card-1.png' },
+    { title: 'Item 3', count: 7, date: '2023-06-03', imageUrl: '/images/../card-1.png' },
   ];
   return (
     <Admin_layout headTitle={profile_pop.metaData.title}>
@@ -151,7 +151,7 @@ export default function Profile_setting_pop({}: Props) {
                   {adminItems.map((item, index) => (
                     <AdminList
                       key={index}
-                      Courses_count={item.title}
+                      title={item.title}
                       count={item.count}
                       date={item.date}
                       imageUrl={item.imageUrl}
