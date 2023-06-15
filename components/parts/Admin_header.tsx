@@ -149,8 +149,8 @@ export default function Admin_Header({ openSidebar, setOpenSidebar }: Props) {
                     className=" object-contain rounded-full"
                     src="/Rectangle1.png"
                     alt="checkified"
-                    height={50}
-                    width={50}
+                    height={42}
+                    width={42}
                     priority
                   />
                   Dominic
