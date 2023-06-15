@@ -24,8 +24,8 @@ export default function Dashboard({}: Props) {
 
   return (
     <Layout headTitle={t.pressData.metaData.title}>
-      <div className="flex flex-wrap mt-3 -mx-3">
-        <div className="w-full max-w-full px-3 flex-0 lg:w-9/12">
+      <div className="flex flex-wrap">
+        <div className="w-full max-w-full flex-0 lg:w-9/12">
           <section className="p-8 lg:p-10 bg-base-100 rounded-[28px] items-center lg:flex-row gap-8 ">
             <ScrollReveal>
               <div className="grid grid-cols-2 place-content-between flex items-baseline">

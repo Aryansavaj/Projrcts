@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from "react";
 
-import Header from "./parts/DashboardHeader";
+import DashboardHeader from "./parts/DashboardHeader";
 import SideHeader from "./parts/SideHeader";
 import Footer from "./parts/Footer";
 import MetaHead from "./MetaHead";
@@ -11,32 +11,18 @@ type Props = {
   children: ReactNode;
 };
 
-export default function Layout({ headTitle, isFullWidth, children }: Props) {
-  const [openSidebar, setOpenSidebar] = useState(false);
-
+export default function Layout({ headTitle, children }: Props) {
   return (
     <>
       <MetaHead title={headTitle} />
       <div data-theme="light" className="overflow-hidden relative">
-        <Header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
-        <main className="pt-header-height bg-base-100">
-          <div className="p-8 lg:p-12 bg-base-200 flex flex-col lg:flex-row gap-8 min-h-screen bg_color_dash">
-            <div className="w-full lg:w-1/6 relative h-[360px]">
-              <SideHeader
-                setOpenSidebar={setOpenSidebar}
-                openSidebar={openSidebar}
-              />
-            </div>
-
-            <div
-              className={`${
-                isFullWidth ? "" : "container"
-              } mx-auto isolate w-full lg:w-6/6  min-h-full`}
-            >
-              {children}
-            </div>
-          </div>
-        </main>
+        <DashboardHeader />
+        <section className="flex flex-row overflow-x-hidden flex-auto">
+          <SideHeader />
+          <main className="bg_color_dash main_body w-full relative">
+            <div className="middle_section">{children}</div>
+          </main>
+        </section>
       </div>
     </>
   );
