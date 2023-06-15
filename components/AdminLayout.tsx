@@ -25,14 +25,12 @@ export default function Admin_layout({ headTitle, children }: Props) {
           </main>
         </section>
 
-        <Admin_header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
+        <Admin_header />
         <main className="pt-header-height bg-base-100">
             
           <div className="bg-base-200 flex min-h-screen bg_color_dash">
             <div className="w-fit relative flex-1">
               <Admin_sidebar
-                setOpenSidebar={setOpenSidebar}
-                openSidebar={openSidebar}
               />
             </div>
 
