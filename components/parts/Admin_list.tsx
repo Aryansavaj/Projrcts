@@ -11,7 +11,7 @@ interface AdminListProps {
 
 const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const menuOptions = ["Option 1", "Option 2", "Option 3"];
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -51,11 +51,10 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
           </div>
           {menuOpen && (
         <div className="menu-options">
-          {/* Place your menu options here */}
-          <div key="option1">Option 1</div>
-          <div key="option2">Option 2</div>
-          <div key="option3">Option 3</div>
-        </div>
+        {menuOptions.map((option, index) => (
+          <div key={`option-${index}`}>{option}</div>
+        ))}
+      </div>
       )}
         </div>
       </div>
