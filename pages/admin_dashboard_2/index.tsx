@@ -34,9 +34,9 @@ export default function Profile_setting_pop({}: Props) {
   };
 
   const adminItems = [
-    { title: 'Checkified - Nyckeln till Framgång', count: 250, date: '2023-06-01', imageUrl: '/images/../card_list4.png' },
-    { title: 'Checkified - Nyckeln till Framgång', count: 250, date: '2023-06-02', imageUrl: '/images/../card_list4.png' },
-    { title: 'Checkified - Nyckeln till Framgång', count: 250, date: '2023-06-03', imageUrl: '/images/../card_list4.png' },
+    { title: 'Checkified - Nyckeln till Framgång', count: 250, date: 'Jan 7, 2023', imageUrl: '/images/../card_list4.png' },
+    { title: 'Checkified - Nyckeln till Framgång', count: 250, date: 'Jan 7, 2023', imageUrl: '/images/../card_list4.png' },
+    { title: 'Checkified - Nyckeln till Framgång', count: 250, date: 'Jan 7, 2023', imageUrl: '/images/../card_list4.png' },
   ];
   return (
     <Admin_layout headTitle={profile_pop.metaData.title}>
