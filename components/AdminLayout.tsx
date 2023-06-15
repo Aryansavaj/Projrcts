@@ -29,8 +29,11 @@ export default function Admin_layout({ headTitle, isFullWidth, children }: Props
               />
             </div>
 
-            <div
-              className=" mx-auto isolate w-full lg:w-6/6">
+           <div
+              className={`${
+                isFullWidth ? "" : "container"
+              } mx-auto isolate w-full lg:w-6/6  min-h-full`}
+            >
               {children}
             </div>
           </div>
