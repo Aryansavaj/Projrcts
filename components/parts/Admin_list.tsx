@@ -12,7 +12,7 @@ interface AdminListProps {
 const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) => {
   return (
     <div className="admin_list flex justify-between items-center">
-      <div className="admin_list_content">
+      <div className="admin_list_content flex justify-between items-center">
         <div className="admin_list_img flex justify-between items-center">
           <img src={imageUrl} alt="Admin Image" />
         </div>
