@@ -59,7 +59,7 @@ export default function Profile_setting_pop({}: Props) {
             <div className="p-8">
               <div className="p-8 bg-base-100 rounded-[24px]">
                 <div className="admin2_content_header flex justify-between items-center">
-                  <div className="admin2_content_title"><h2><span>150 </span>Active Courses</h2></div>
+                  <div className="admin2_content_title form-text-color font-bold"><h2><span>150 </span>Active Courses</h2></div>
                   <div className="admin2_content_nav">
                     <div className="flex gap-3 justify-between items-center">
                       <h3>View by</h3>
