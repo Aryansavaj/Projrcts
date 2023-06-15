@@ -50,7 +50,7 @@ export default function Admin_sidebar({}: Props) {
                 stroke-linejoin="round"
               />
             </svg>
-            <span className="text-[14px] ml-4  font-semibold">Hem</span>
+            <span className="text-[14px] ml-4  font-semibold">Home</span>
           </div>
           <div
             className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer text-subtitle"
