@@ -25,7 +25,7 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
             </div>
           </div>
         </div>
-        <div className="admin_list_menu"><BsThreeDotsVertical/></div>
+        <div className="admin_list_menu rounded-[25px] py-7 px-2"><BsThreeDotsVertical/></div>
       </div>
   );
 };
