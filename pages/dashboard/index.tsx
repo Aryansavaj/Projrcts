@@ -26,8 +26,8 @@ export default function Dashboard({}: Props) {
 
   return (
     <Layout headTitle={dashboardData.metaData.title}>
-      <div className="flex flex-wrap mt-3 -mx-3">
-        <div className="w-full max-w-full pr-3 flex-0 lg:w-9/12">
+      <div className="flex flex-wrap">
+        <div className="w-full max-w-full flex-0 lg:w-9/12">
           <section className="bg-primary rounded-[28px] py-12 lg:py-5 text-white relative mb-10 isolate">
             <div className="w-full lg:w-1/2  p-8 lg:px-8 lg:py-[29px] lg:mr-auto mt-40 lg:mt-0">
               <FadeLogo

@@ -922,6 +922,9 @@ div.vertical-line {
 .side_payment_bar {
   height: 78% !important;
 }
+
+/*************Admin Panel css********************/
+
 .admin2_btn {
   background: rgba(255, 255, 255, 0.14) !important;
   border-radius: 5px !important;
@@ -930,8 +933,28 @@ div.vertical-line {
   gap: 4.5rem !important;
   padding-bottom: 5.5rem !important;
 }
-.admin_list_menu{
+.admin_list_menu {
   background-color: #f9f9f9;
+}
+.search_svg {
+  background: #edf5fe;
+  border-radius: 29px;
+  width: 40px;
+  height: 40px;
+}
+.rounded-corner {
+  border-radius: 100px;
+}
+.circle-shadow {
+  box-shadow: 0px 53px 90px rgba(0, 0, 0, 0.15);
+}
+.h-370 {
+  height: 370px !important;
+}
+.calender-img {
+  height: 360px !important;
+  left: 45px !important;
+  top: -86px !important;
 }
 .admin2_content_title span{
   color: #0083FF !important; 
