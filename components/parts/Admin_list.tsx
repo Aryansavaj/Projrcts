@@ -45,12 +45,12 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
             </div>
           </div>
         </div>
-        <div className={`admin_list_menu rounded-[25px] py-7 px-2 ${menuOpen ? 'open' : ''}`}>
+        <div className={`admin_list_menu relative rounded-[25px] py-7 px-2 ${menuOpen ? 'open' : ''}`}>
           <div onClick={toggleMenu}>
             <BsThreeDotsVertical/>
           </div>
           {menuOpen && (
-        <div className="menu-options">
+        <div className="menu-options absolute right-100">
         {menuOptions.map((option, index) => (
           <div key={`option-${index}`}>{option}</div>
         ))}
