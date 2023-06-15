@@ -147,7 +147,7 @@ export default function Profile_setting_pop({}: Props) {
                     </div>
                   </div>
                 </div>
-                <div className="">
+                <div className="bg-base-200 p-6 rounded-[24px]">
                   {adminItems.map((item, index) => (
                     <AdminList
                       key={index}

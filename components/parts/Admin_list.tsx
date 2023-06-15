@@ -11,7 +11,7 @@ interface AdminListProps {
 
 const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) => {
   return (
-    <div className="bg-base-200 p-6 rounded-[24px]">
+    
       <div className="admin_list flex justify-between items-center bg-white my-4 rounded-[26px]">
         <div className="admin_list_content flex justify-between items-center">
           <div className="admin_list_img flex justify-between items-center">
@@ -27,7 +27,6 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
         </div>
         <div className="admin_list_menu"><BsThreeDotsVertical/></div>
       </div>
-    </div>
   );
 };
 
