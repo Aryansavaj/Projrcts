@@ -91,7 +91,7 @@ export default function Profile_setting_pop({}: Props) {
                       <div className="bg-base-100 w-full flex items-center rounded-corner">
                         <div className="search_svg rounded-full flex item-center justify-center ml-2.5">
                           <Image
-                            src="/images/Adminimg/search-normal.svg"
+                            src="/images/Adminimg/Group.svg"
                             width={20}
                             height={20}
                             alt="avatar"
@@ -154,6 +154,11 @@ export default function Profile_setting_pop({}: Props) {
                       Upload Your Course
                     </p>
                   </ScrollReveal>
+                </div>
+                <div>
+                  <div>
+
+                  </div>
                 </div>
               </section>
 
