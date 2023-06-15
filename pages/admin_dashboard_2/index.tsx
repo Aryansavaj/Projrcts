@@ -34,9 +34,9 @@ export default function Profile_setting_pop({}: Props) {
   };
 
   const adminItems = [
-    { title: 'Item 1', count: 5, date: '2023-06-01', imageUrl: '/images/../card_list.png' },
-    { title: 'Item 2', count: 10, date: '2023-06-02', imageUrl: '/images/../card_list.png' },
-    { title: 'Item 3', count: 7, date: '2023-06-03', imageUrl: '/images/../card_list.png' },
+    { title: 'Item 1', count: 5, date: '2023-06-01', imageUrl: '/images/../card_list4.png' },
+    { title: 'Item 2', count: 10, date: '2023-06-02', imageUrl: '/images/../card_list4.png' },
+    { title: 'Item 3', count: 7, date: '2023-06-03', imageUrl: '/images/../card_list4.png' },
   ];
   return (
     <Admin_layout headTitle={profile_pop.metaData.title}>
