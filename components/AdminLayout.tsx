@@ -11,33 +11,18 @@ type Props = {
   children: ReactNode;
 };
 
-export default function Admin_layout({ headTitle, isFullWidth, children }: Props) {
-  const [openSidebar, setOpenSidebar] = useState(false);
-
+export default function Admin_layout({ headTitle, children }: Props) {
   return (
     <>
       <MetaHead title={headTitle} />
       <div data-theme="light" className="overflow-hidden relative">
-        <Admin_header setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
-        <main className="pt-header-height bg-base-100">
-            
-          <div className="bg-base-200 flex min-h-screen bg_color_dash">
-            <div className="w-fit relative flex-1">
-              <Admin_sidebar
-                setOpenSidebar={setOpenSidebar}
-                openSidebar={openSidebar}
-              />
-            </div>
-
-           <div
-              className={`${
-                isFullWidth ? "" : "container"
-              } mx-auto isolate w-full lg:w-6/6  min-h-full`}
-            >
-              {children}
-            </div>
-          </div>
-        </main>
+        <Admin_header />
+        <section className="flex flex-row overflow-x-hidden flex-auto">
+          <Admin_sidebar />
+          <main className="bg_color_dash main_body w-full relative">
+            <div className="middle_section">{children}</div>
+          </main>
+        </section>
       </div>
     </>
   );
