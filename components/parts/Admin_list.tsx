@@ -20,8 +20,8 @@ const AdminList: React.FC<AdminListProps> = ({ title, count, date, imageUrl }) =
           <div className="admin_list_detail">
             <h4 className="text-base form-text-color font-semibold">{title}</h4>
             <div className="admin_list_extra flex gap-4 items-center">
-              <div className="admin_list_count">{count}</div>
-              <div className="admin_list_date">{date}</div>
+              <div className="admin_list_count font-medium text-[10px] text-707BA0">{count}</div>
+              <div className="admin_list_date font-medium text-[10px] text-707BA0">{date}</div>
             </div>
           </div>
         </div>
