@@ -1,8 +1,8 @@
-import { PricingData } from "../types/pricing"
+import { PricingData } from "../types/pricing";
 
 export const pricingData: PricingData = {
   metaData: {
-    title: "Prisplaner"
+    title: "Prisplaner",
   },
 
   pricingTitle: "Prisplaner",
@@ -11,16 +11,16 @@ export const pricingData: PricingData = {
   pricingList: [
     {
       id: 1,
-      text: "Engångsbetalning"
+      text: "Engångsbetalning",
     },
     {
       id: 2,
-      text: "Inga månadsavgifter"
+      text: "Inga månadsavgifter",
     },
     {
       id: 3,
-      text: "Livstidsåtkomst"
-    }
+      text: "Livstidsåtkomst",
+    },
   ],
   pricingData: [
     {
@@ -32,27 +32,27 @@ export const pricingData: PricingData = {
       lists: [
         {
           id: 1,
-          label: "Introduktion till Dropshipping"
+          label: "Introduktion till Dropshipping",
         },
         {
           id: 2,
-          label: "Hitta din Nisch"
+          label: "Hitta din Nisch",
         },
         {
           id: 3,
-          label: "Konfigurera din Butik"
+          label: "Konfigurera din Butik",
         },
         {
           id: 4,
-          label: "Marknadsföring och Reklam"
+          label: "Marknadsföring och Reklam",
         },
         {
           id: 5,
-          label: "Tillgång till Privat Community"
-        }
+          label: "Tillgång till Privat Community",
+        },
       ],
       buttonText: "Starta nu",
-      secureText: "7-dagars gratis provperiod. Avbryt när som helst"
+      secureText: "7-dagars gratis provperiod. Avbryt när som helst",
     },
     {
       id: 2,
@@ -63,31 +63,31 @@ export const pricingData: PricingData = {
       lists: [
         {
           id: 1,
-          label: "Hitta rätt Leverantör"
+          label: "Hitta rätt Leverantör",
         },
         {
           id: 2,
-          label: "Hur man växer ett Varumärke"
+          label: "Hur man växer ett Varumärke",
         },
         {
           id: 3,
-          label: "Gör Virala Annonser"
+          label: "Gör Virala Annonser",
         },
         {
           id: 4,
-          label: "SEO-optimering"
+          label: "SEO-optimering",
         },
         {
           id: 5,
-          label: "Photoshop"
+          label: "Photoshop",
         },
         {
           id: 6,
-          label: "Vegas Pro"
-        }
+          label: "Vegas Pro",
+        },
       ],
       buttonText: "Starta nu",
-      secureText: "7-dagars gratis provperiod. Avbryt när som helst"
+      secureText: "7-dagars gratis provperiod. Avbryt när som helst",
     },
     {
       id: 3,
@@ -98,36 +98,36 @@ export const pricingData: PricingData = {
       lists: [
         {
           id: 1,
-          label: "Anpassad Strategi"
+          label: "Anpassad Strategi",
         },
         {
           id: 2,
-          label: "Dropshipping-verktyg"
+          label: "Dropshipping-verktyg",
         },
         {
           id: 3,
-          label: "Events och Webinars"
+          label: "Events och Webinars",
         },
         {
           id: 4,
-          label: "Exclusiva Resurser"
+          label: "Färdig e-handelsbutik",
         },
         {
           id: 5,
-          label: "Google Ads och SEO-guide"
+          label: "Google Ads och SEO-guide",
         },
         {
           id: 6,
-          label: "Personlig Coachning"
+          label: "Personlig Coachning",
         },
         {
           id: 7,
-          label: "Premium Kundsupport"
-        }
+          label: "Premium Kundsupport",
+        },
       ],
       buttonText: "Starta nu",
-      secureText: "7-dagars gratis provperiod. Avbryt när som helst"
-    }
+      secureText: "7-dagars gratis provperiod. Avbryt när som helst",
+    },
   ],
 
   enterpriseTitle: "Företag",
@@ -150,7 +150,7 @@ export const pricingData: PricingData = {
       message:
         "Dropshipping har förändrat mitt liv. Fick lära mig mycket och slutat mitt 9-5. Rekommenderat detta till mina vänner.",
       name: "Kajsa Wahlgren",
-      position: "Checkified Student"
+      position: "Checkified Student",
     },
     {
       id: 2,
@@ -158,7 +158,7 @@ export const pricingData: PricingData = {
       message:
         "Jag kan dock med säkerhet säga att Checkified slår dem alla. Bästa lösningen för att komma igång med Dropshipping.",
       name: "Andreas Bowall",
-      position: "Checkified Student"
+      position: "Checkified Student",
     },
     {
       id: 3,
@@ -166,7 +166,7 @@ export const pricingData: PricingData = {
       message:
         "Skapade min shopify butik, sålde första månaden för 35 tusen i vinstmarginal, utan att skala. Bästa investeringen.",
       name: "Felix Aadland",
-      position: "Checkified Student"
+      position: "Checkified Student",
     },
     {
       id: 4,
@@ -174,7 +174,7 @@ export const pricingData: PricingData = {
       message:
         "Riktigt bra innehåll, med kunniga mentorer. Modulerna är enkla att följa, med notifikationer för att hålla dig motiverad.",
       name: "Simon Vimmerson",
-      position: "Checkified Student"
+      position: "Checkified Student",
     },
     {
       id: 5,
@@ -182,7 +182,7 @@ export const pricingData: PricingData = {
       message:
         "Älskar affärsmodellen med dropshipping, så jag köpte kursen och var det bästa jag gjort. Krävs lite startkapital, perfekt för nyböjare.",
       name: "Felicia Benjaminson",
-      position: "Checkified Student"
+      position: "Checkified Student",
     },
     {
       id: 6,
@@ -190,8 +190,8 @@ export const pricingData: PricingData = {
       message:
         "Plattformen är grym. Tog mig tre butiker innan jag hittade en vinnande produkt. Rekommenderar Checkified!",
       name: "Lukas Boström",
-      position: "Checkified Student"
-    }
+      position: "Checkified Student",
+    },
   ],
 
   faqBlackTitle: "Vanliga",
@@ -201,44 +201,44 @@ export const pricingData: PricingData = {
       id: 1,
       question: "Vad är Checkified?",
       answer:
-        "Checkified är en plattform för onlineutbildning som erbjuder ett brett utbud av kurser. Checkifieds kurser är tillgängliga inom en mängd olika ämnen, inklusive affärer, teknik, ekonomi och mycket mer."
+        "Checkified är en plattform för onlineutbildning som erbjuder ett brett utbud av kurser. Checkifieds kurser är tillgängliga inom en mängd olika ämnen, inklusive affärer, teknik, ekonomi och mycket mer.",
     },
     {
       id: 2,
       question: "Vad är Dropshipping?",
       answer:
-        "Dropshipping är en metod för detaljhandelsförsäljning där en butik inte har de produkter som säljs i lager. När butiken säljer en produkt köper den i stället varan från en tredje part och skickar den direkt till kunden. Detta innebär att handlaren aldrig ser eller hanterar produkten."
+        "Dropshipping är en metod för detaljhandelsförsäljning där en butik inte har de produkter som säljs i lager. När butiken säljer en produkt köper den i stället varan från en tredje part och skickar den direkt till kunden. Detta innebär att handlaren aldrig ser eller hanterar produkten.",
     },
     {
       id: 3,
       question:
         "Hur skiljer sig Checkified från andra plattformar för lärande online?",
       answer:
-        "Checkified skiljer sig från andra plattformar för onlineutbildning genom sitt breda utbud av kurser. En mängd olika funktioner för att förbättra inlärningsupplevelsen, t.ex. kamratbedömda uppgifter och interaktiva frågesporter."
+        "Checkified skiljer sig från andra plattformar för onlineutbildning genom sitt breda utbud av kurser. En mängd olika funktioner för att förbättra inlärningsupplevelsen, t.ex. kamratbedömda uppgifter och interaktiva frågesporter.",
     },
     {
       id: 4,
       question: "Hur anmäler jag mig till en Checkified-kurs?",
       answer:
-        "För att anmäla dig till en Checkified-kurs går du till Checkifieds webbplats och klickar på &quot;Get Started&quot;. Du kan behöva skapa ett konto på Checkified om du inte redan har gjort det."
+        "För att anmäla dig till en Checkified-kurs går du till Checkifieds webbplats och klickar på &quot;Get Started&quot;. Du kan behöva skapa ett konto på Checkified om du inte redan har gjort det.",
     },
     {
       id: 5,
       question: "Vad händer om jag inte är nöjd?",
       answer:
-        "Om du inte är nöjd med kursen kan du få pengarna tillbaka inom 14 dagar, alternativt inte tittat mer än 25% av kursen."
+        "Om du inte är nöjd med kursen kan du få pengarna tillbaka inom 14 dagar, alternativt inte tittat mer än 25% av kursen.",
     },
     {
       id: 6,
       question: "Kan jag få pengarna tillbaka för en Checkified-kurs?",
       answer:
-        "Checkified erbjuder en 14-dagars återbetalningspolicy för de flesta kurser. Det finns dock vissa kurser som inte är berättigade till återbetalning, så det är viktigt att kontrollera återbetalningspolicyn för varje kurs innan du registrerar dig."
+        "Checkified erbjuder en 14-dagars återbetalningspolicy för de flesta kurser. Det finns dock vissa kurser som inte är berättigade till återbetalning, så det är viktigt att kontrollera återbetalningspolicyn för varje kurs innan du registrerar dig.",
     },
     {
       id: 7,
       question: "Vilka betalningsmetoder accepterar ni?",
       answer:
-        "Checkified accepterar Visa, Mastercard och American Express genom säker betalningshantering på plats."
-    }
-  ]
-}
+        "Checkified accepterar Visa, Mastercard och American Express genom säker betalningshantering på plats.",
+    },
+  ],
+};

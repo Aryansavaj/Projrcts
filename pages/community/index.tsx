@@ -254,7 +254,7 @@ export default function Profilepayment({}: Props) {
                           dui ut pretium sed. Nullam enim quisque facilisis
                           nunc.
                         </p>
-                        <div className="grid grid-cols-1 lg:grid-cols-5">
+                        <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4">
                           <div key="" className="flex text-center items-center">
                             <div className="relative">
                               <Image
