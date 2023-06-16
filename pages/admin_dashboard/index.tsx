@@ -69,7 +69,7 @@ export default function Profile_setting_pop({}: Props) {
         <div className="flex flex-wrap pl-8 pr-8 mt-14">
           <div className="w-full max-w-full flex flex-0">
             <section className="bg-primary rounded-[28px] py-12 lg:py-5 text-white relative mb-10 isolate lg:w-8/12 z-10">
-              <div className="w-full lg:w-7/12  p-8 lg:px-8 lg:py-[29px] lg:mr-auto mt-40 lg:mt-0">
+              <div className="w-full lg:w-8/12   p-8 lg:px-8 lg:py-[29px] lg:mr-auto mt-40 lg:mt-0">
                 <FadeLogo
                   positionClassName="left-[-2rem] bottom-[-2rem] absolute"
                   svgClassname="svg-white-opacity"
