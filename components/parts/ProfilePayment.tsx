@@ -4,10 +4,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 type FormValues = {
-  namecard:string;
-  cardNumber:number;
-  validitydate:string;
-  cvc:number;
+  namecard: string;
+  cardNumber: number;
+  validitydate: string;
+  cvc: number;
 };
 
 const schema = yup
@@ -24,10 +24,10 @@ const schema = yup
 
 type Props = {
   profilepayData: {
-    namecard:string;
-    cardNumber:string;
-    validitydate:string;
-    cvc:string;
+    namecard: string;
+    cardNumber: string;
+    validitydate: string;
+    cvc: string;
     button: string;
   };
 };
@@ -42,7 +42,6 @@ export default function ProfilePayment({ profilepayData }: Props) {
   });
 
   const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
-
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="" action="">
@@ -66,7 +65,7 @@ export default function ProfilePayment({ profilepayData }: Props) {
             </p>
           )}
         </div>
-        
+
         <div className="form-control">
           <label className="label">
             <span className="label-text font-bold">
@@ -81,11 +80,13 @@ export default function ProfilePayment({ profilepayData }: Props) {
             {...register("cardNumber")}
           />
           {errors.cardNumber && (
-            <p className="text-red-400 text-sm mt-1">{errors.cardNumber.message}</p>
+            <p className="text-red-400 text-sm mt-1">
+              {errors.cardNumber.message}
+            </p>
           )}
         </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
         <div className="form-control">
           <label className="label">
             <span className="label-text font-bold">
@@ -100,7 +101,9 @@ export default function ProfilePayment({ profilepayData }: Props) {
             {...register("cardNumber")}
           />
           {errors.validitydate && (
-            <p className="text-red-400 text-sm mt-1">{errors.validitydate.message}</p>
+            <p className="text-red-400 text-sm mt-1">
+              {errors.validitydate.message}
+            </p>
           )}
         </div>
         <div className="form-control">
@@ -120,9 +123,11 @@ export default function ProfilePayment({ profilepayData }: Props) {
             <p className="text-red-400 text-sm mt-1">{errors.cvc.message}</p>
           )}
         </div>
-       
       </div>
-      <button type="submit" className="btn btn-primary mt-8 w-full shadow-btn btn_pro_payment">
+      <button
+        type="submit"
+        className="btn btn-primary mt-8 w-full shadow-btn btn_pro_payment rounded-[12px]"
+      >
         {profilepayData.button}
       </button>
     </form>
